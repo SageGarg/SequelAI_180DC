@@ -1,0 +1,497 @@
+[
+  {
+    "assembly_id": "ASM-001",
+    "name": "Standard 2-Spine Disc Rack Assembly",
+    "description": "Basic anodizing rack with 2 spines mounted on a small frame, configured for standard discs. Suitable for small batch anodizing of flat round parts.",
+    "application": "Small batch anodizing of round flat aluminum parts up to 2.5 lbs each",
+    "parts": [
+      {
+        "item_number": "191-FR2",
+        "name": "Rack Frame Small (2 Spine)",
+        "quantity": 1
+      },
+      {
+        "item_number": "191-SP24",
+        "name": "Standard Rack Spine 24\"",
+        "quantity": 2
+      },
+      {
+        "item_number": "191-RC1",
+        "name": "Standard Spine-to-Frame Clamp",
+        "quantity": 4
+      },
+      {
+        "item_number": "191-SEC",
+        "name": "Spine End Cap",
+        "quantity": 4
+      },
+      {
+        "item_number": "191-TW1-24",
+        "name": "Titanium Contact Wire 24\"",
+        "quantity": 2
+      },
+      {
+        "item_number": "191-TWC",
+        "name": "Contact Wire Crimp",
+        "quantity": 4
+      }
+    ],
+    "fasteners": [
+      {
+        "item_number": "999030",
+        "name": "Frame Bolt",
+        "quantity": 4
+      },
+      {
+        "item_number": "999031",
+        "name": "Frame Nut",
+        "quantity": 4
+      },
+      {
+        "item_number": "999050",
+        "name": "Clamp Bolt",
+        "quantity": 8
+      },
+      {
+        "item_number": "999051",
+        "name": "Clamp Nut",
+        "quantity": 8
+      }
+    ],
+    "discs_not_included": true,
+    "disc_note": "Select discs separately based on your part size and hole style requirement. Each 24\" spine holds up to 22 discs.",
+    "spine_hardware": [
+      {
+        "item_number": "999010",
+        "name": "Spine Bolt (Standard)",
+        "quantity_per_disc": 1
+      },
+      {
+        "item_number": "999011",
+        "name": "Spine Nut (Standard)",
+        "quantity_per_disc": 1
+      },
+      {
+        "item_number": "191-SS1",
+        "name": "Spine Spacer",
+        "quantity_per_disc": 1
+      }
+    ]
+  },
+  {
+    "assembly_id": "ASM-002",
+    "name": "Medium 4-Spine Disc Rack Assembly",
+    "description": "Mid-size anodizing rack with 4 spines on a medium frame. Provides higher throughput for production anodizing runs.",
+    "application": "Production anodizing of round flat aluminum parts, medium volume",
+    "parts": [
+      {
+        "item_number": "191-FR4",
+        "name": "Rack Frame Medium (4 Spine)",
+        "quantity": 1
+      },
+      {
+        "item_number": "191-SP36",
+        "name": "Standard Rack Spine 36\"",
+        "quantity": 4
+      },
+      {
+        "item_number": "191-RC1",
+        "name": "Standard Spine-to-Frame Clamp",
+        "quantity": 8
+      },
+      {
+        "item_number": "191-XB12",
+        "name": "Crossbar 12\"",
+        "quantity": 2
+      },
+      {
+        "item_number": "191-RC4",
+        "name": "Crossbar Clamp",
+        "quantity": 4
+      },
+      {
+        "item_number": "191-SEC",
+        "name": "Spine End Cap",
+        "quantity": 8
+      },
+      {
+        "item_number": "191-TW1-36",
+        "name": "Titanium Contact Wire 36\"",
+        "quantity": 4
+      },
+      {
+        "item_number": "191-TWC",
+        "name": "Contact Wire Crimp",
+        "quantity": 8
+      }
+    ],
+    "fasteners": [
+      {
+        "item_number": "999030",
+        "name": "Frame Bolt",
+        "quantity": 8
+      },
+      {
+        "item_number": "999031",
+        "name": "Frame Nut",
+        "quantity": 8
+      },
+      {
+        "item_number": "999050",
+        "name": "Clamp Bolt",
+        "quantity": 16
+      },
+      {
+        "item_number": "999051",
+        "name": "Clamp Nut",
+        "quantity": 16
+      }
+    ],
+    "discs_not_included": true,
+    "disc_note": "Select discs separately. Each 36\" spine holds up to 34 discs. Total capacity: 136 discs.",
+    "spine_hardware": [
+      {
+        "item_number": "999010",
+        "name": "Spine Bolt (Standard)",
+        "quantity_per_disc": 1
+      },
+      {
+        "item_number": "999011",
+        "name": "Spine Nut (Standard)",
+        "quantity_per_disc": 1
+      },
+      {
+        "item_number": "191-SS1",
+        "name": "Spine Spacer",
+        "quantity_per_disc": 1
+      }
+    ]
+  },
+  {
+    "assembly_id": "ASM-003",
+    "name": "Large 6-Spine Disc Rack Assembly",
+    "description": "Full-size anodizing rack with 6 spines on a large frame. Maximum throughput for high-volume production anodizing.",
+    "application": "High-volume production anodizing, maximum throughput",
+    "parts": [
+      {
+        "item_number": "191-FR6",
+        "name": "Rack Frame Large (6 Spine)",
+        "quantity": 1
+      },
+      {
+        "item_number": "191-SP48",
+        "name": "Standard Rack Spine 48\"",
+        "quantity": 6
+      },
+      {
+        "item_number": "191-RC1",
+        "name": "Standard Spine-to-Frame Clamp",
+        "quantity": 12
+      },
+      {
+        "item_number": "191-XB18",
+        "name": "Crossbar 18\"",
+        "quantity": 3
+      },
+      {
+        "item_number": "191-RC4",
+        "name": "Crossbar Clamp",
+        "quantity": 6
+      },
+      {
+        "item_number": "191-SEC",
+        "name": "Spine End Cap",
+        "quantity": 12
+      },
+      {
+        "item_number": "191-TW1-36",
+        "name": "Titanium Contact Wire 36\"",
+        "quantity": 6
+      },
+      {
+        "item_number": "191-TWC",
+        "name": "Contact Wire Crimp",
+        "quantity": 12
+      }
+    ],
+    "fasteners": [
+      {
+        "item_number": "999030",
+        "name": "Frame Bolt",
+        "quantity": 12
+      },
+      {
+        "item_number": "999031",
+        "name": "Frame Nut",
+        "quantity": 12
+      },
+      {
+        "item_number": "999050",
+        "name": "Clamp Bolt",
+        "quantity": 24
+      },
+      {
+        "item_number": "999051",
+        "name": "Clamp Nut",
+        "quantity": 24
+      }
+    ],
+    "discs_not_included": true,
+    "disc_note": "Select discs separately. Each 48\" spine holds up to 46 discs. Total capacity: 276 discs.",
+    "spine_hardware": [
+      {
+        "item_number": "999010",
+        "name": "Spine Bolt (Standard)",
+        "quantity_per_disc": 1
+      },
+      {
+        "item_number": "999011",
+        "name": "Spine Nut (Standard)",
+        "quantity_per_disc": 1
+      },
+      {
+        "item_number": "191-SS1",
+        "name": "Spine Spacer",
+        "quantity_per_disc": 1
+      }
+    ]
+  },
+  {
+    "assembly_id": "ASM-004",
+    "name": "Heavy-Duty 2-Spine Rack Assembly",
+    "description": "Heavy-duty rack with 2 spines for anodizing larger, heavier aluminum parts using HD discs.",
+    "application": "Anodizing heavy aluminum parts up to 5.0 lbs each",
+    "parts": [
+      {
+        "item_number": "191-FR2",
+        "name": "Rack Frame Small (2 Spine)",
+        "quantity": 1
+      },
+      {
+        "item_number": "191-SP24",
+        "name": "Standard Rack Spine 24\"",
+        "quantity": 2
+      },
+      {
+        "item_number": "191-RC1",
+        "name": "Standard Spine-to-Frame Clamp",
+        "quantity": 4
+      },
+      {
+        "item_number": "191-SEC",
+        "name": "Spine End Cap",
+        "quantity": 4
+      },
+      {
+        "item_number": "191-TW1-24",
+        "name": "Titanium Contact Wire 24\"",
+        "quantity": 2
+      },
+      {
+        "item_number": "191-TWC",
+        "name": "Contact Wire Crimp",
+        "quantity": 4
+      }
+    ],
+    "fasteners": [
+      {
+        "item_number": "999030",
+        "name": "Frame Bolt",
+        "quantity": 4
+      },
+      {
+        "item_number": "999031",
+        "name": "Frame Nut",
+        "quantity": 4
+      },
+      {
+        "item_number": "999050",
+        "name": "Clamp Bolt",
+        "quantity": 8
+      },
+      {
+        "item_number": "999051",
+        "name": "Clamp Nut",
+        "quantity": 8
+      }
+    ],
+    "discs_not_included": true,
+    "disc_note": "Use HD discs (900100-900122) for heavy parts. HD discs require HD spine bolts (999020) and HD spine nuts (999021) instead of standard spine hardware.",
+    "spine_hardware": [
+      {
+        "item_number": "999020",
+        "name": "HD Spine Bolt",
+        "quantity_per_disc": 1
+      },
+      {
+        "item_number": "999021",
+        "name": "HD Spine Nut",
+        "quantity_per_disc": 1
+      },
+      {
+        "item_number": "191-SS1",
+        "name": "Spine Spacer",
+        "quantity_per_disc": 1
+      }
+    ]
+  },
+  {
+    "assembly_id": "ASM-005",
+    "name": "Clip Rack Assembly for Irregular Parts",
+    "description": "Rack configured with clip adapters instead of discs, for anodizing irregularly-shaped parts that cannot be disc-mounted.",
+    "application": "Anodizing irregular, non-round, or complex-shaped aluminum parts",
+    "parts": [
+      {
+        "item_number": "191-FR2",
+        "name": "Rack Frame Small (2 Spine)",
+        "quantity": 1
+      },
+      {
+        "item_number": "191-SP24",
+        "name": "Standard Rack Spine 24\"",
+        "quantity": 2
+      },
+      {
+        "item_number": "191-RC1",
+        "name": "Standard Spine-to-Frame Clamp",
+        "quantity": 4
+      },
+      {
+        "item_number": "191-CA1",
+        "name": "Clip Adapter",
+        "quantity": 20
+      },
+      {
+        "item_number": "191-SEC",
+        "name": "Spine End Cap",
+        "quantity": 4
+      },
+      {
+        "item_number": "191-TW1-24",
+        "name": "Titanium Contact Wire 24\"",
+        "quantity": 2
+      },
+      {
+        "item_number": "191-TWC",
+        "name": "Contact Wire Crimp",
+        "quantity": 4
+      }
+    ],
+    "fasteners": [
+      {
+        "item_number": "999030",
+        "name": "Frame Bolt",
+        "quantity": 4
+      },
+      {
+        "item_number": "999031",
+        "name": "Frame Nut",
+        "quantity": 4
+      },
+      {
+        "item_number": "999050",
+        "name": "Clamp Bolt",
+        "quantity": 8
+      },
+      {
+        "item_number": "999051",
+        "name": "Clamp Nut",
+        "quantity": 8
+      },
+      {
+        "item_number": "999040",
+        "name": "Clip Bolt",
+        "quantity": 20
+      }
+    ],
+    "clips_not_included": true,
+    "clip_note": "Select clips separately based on your part shape: CL1 for thin parts <0.5\", CL2 for adjustable grip up to 1.0\", CL3 for wide parts up to 2.0\", CL4 for micro parts <0.25\"."
+  },
+  {
+    "assembly_id": "ASM-006",
+    "name": "Ganged Double-Frame Assembly",
+    "description": "Two rack frames connected side by side using frame-to-frame connectors for double capacity without separate rack handling.",
+    "application": "Doubling rack capacity while maintaining single-unit handling",
+    "parts": [
+      {
+        "item_number": "191-FR4",
+        "name": "Rack Frame Medium (4 Spine)",
+        "quantity": 2
+      },
+      {
+        "item_number": "191-RC3",
+        "name": "Frame-to-Frame Connector",
+        "quantity": 4
+      },
+      {
+        "item_number": "191-SP36",
+        "name": "Standard Rack Spine 36\"",
+        "quantity": 8
+      },
+      {
+        "item_number": "191-RC1",
+        "name": "Standard Spine-to-Frame Clamp",
+        "quantity": 16
+      },
+      {
+        "item_number": "191-XB12",
+        "name": "Crossbar 12\"",
+        "quantity": 4
+      },
+      {
+        "item_number": "191-RC4",
+        "name": "Crossbar Clamp",
+        "quantity": 8
+      },
+      {
+        "item_number": "191-SEC",
+        "name": "Spine End Cap",
+        "quantity": 16
+      },
+      {
+        "item_number": "191-TW1-36",
+        "name": "Titanium Contact Wire 36\"",
+        "quantity": 8
+      },
+      {
+        "item_number": "191-TWC",
+        "name": "Contact Wire Crimp",
+        "quantity": 16
+      }
+    ],
+    "fasteners": [
+      {
+        "item_number": "999030",
+        "name": "Frame Bolt",
+        "quantity": 16
+      },
+      {
+        "item_number": "999031",
+        "name": "Frame Nut",
+        "quantity": 16
+      },
+      {
+        "item_number": "999050",
+        "name": "Clamp Bolt",
+        "quantity": 32
+      },
+      {
+        "item_number": "999051",
+        "name": "Clamp Nut",
+        "quantity": 32
+      },
+      {
+        "item_number": "999052",
+        "name": "Connector Bolt",
+        "quantity": 8
+      },
+      {
+        "item_number": "999053",
+        "name": "Connector Nut",
+        "quantity": 8
+      }
+    ],
+    "discs_not_included": true,
+    "disc_note": "Select discs separately. Total capacity: 272 discs (8 spines × 34 discs per 36\" spine)."
+  }
+]

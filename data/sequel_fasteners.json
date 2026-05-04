@@ -1,0 +1,123 @@
+[
+  {
+    "item_number": "999010",
+    "name": "Spine Bolt (Standard)",
+    "type": "Hex Bolt",
+    "size": "1/4-20 × 0.75\"",
+    "material": "Titanium",
+    "finish": "None (bare titanium)",
+    "use": "Mounting standard discs (0.125\" thick) to rack spines",
+    "compatible_with": ["Standard Discs (900010–900058)"],
+    "quantity_note": "1 per disc"
+  },
+  {
+    "item_number": "999011",
+    "name": "Spine Nut (Standard)",
+    "type": "Hex Nut",
+    "size": "1/4-20",
+    "material": "Titanium",
+    "finish": "None (bare titanium)",
+    "use": "Pairs with Spine Bolt 999010",
+    "compatible_with": ["999010"],
+    "quantity_note": "1 per disc"
+  },
+  {
+    "item_number": "999020",
+    "name": "HD Spine Bolt",
+    "type": "Hex Bolt",
+    "size": "1/4-20 × 1.0\"",
+    "material": "Titanium",
+    "finish": "None (bare titanium)",
+    "use": "Mounting HD discs (0.187\" thick) to rack spines. Longer than standard spine bolt to accommodate thicker disc.",
+    "compatible_with": ["HD Discs (900100–900122)"],
+    "quantity_note": "1 per HD disc"
+  },
+  {
+    "item_number": "999021",
+    "name": "HD Spine Nut",
+    "type": "Hex Nut",
+    "size": "1/4-20",
+    "material": "Titanium",
+    "finish": "None (bare titanium)",
+    "use": "Pairs with HD Spine Bolt 999020",
+    "compatible_with": ["999020"],
+    "quantity_note": "1 per HD disc"
+  },
+  {
+    "item_number": "999030",
+    "name": "Frame Bolt",
+    "type": "Hex Bolt",
+    "size": "5/16-18 × 1.0\"",
+    "material": "Titanium",
+    "finish": "None (bare titanium)",
+    "use": "Securing rack spines to rack frames",
+    "compatible_with": ["All rack frames (191-FR2, 191-FR4, 191-FR6)", "All rack spines (191-SP series)"],
+    "quantity_note": "2 per spine (top and bottom)"
+  },
+  {
+    "item_number": "999031",
+    "name": "Frame Nut",
+    "type": "Hex Nut",
+    "size": "5/16-18",
+    "material": "Titanium",
+    "finish": "None (bare titanium)",
+    "use": "Pairs with Frame Bolt 999030",
+    "compatible_with": ["999030"],
+    "quantity_note": "2 per spine"
+  },
+  {
+    "item_number": "999040",
+    "name": "Clip Bolt",
+    "type": "Hex Bolt",
+    "size": "10-32 × 0.5\"",
+    "material": "Titanium",
+    "finish": "None (bare titanium)",
+    "use": "Securing clip adapters (191-CA1) to rack spines",
+    "compatible_with": ["191-CA1 Clip Adapter"],
+    "quantity_note": "1 per clip adapter"
+  },
+  {
+    "item_number": "999050",
+    "name": "Clamp Bolt",
+    "type": "Hex Bolt",
+    "size": "1/4-20 × 0.625\"",
+    "material": "Titanium",
+    "finish": "None (bare titanium)",
+    "use": "Securing rack clamps RC1 and RC2 to frames",
+    "compatible_with": ["191-RC1", "191-RC2"],
+    "quantity_note": "2 per clamp"
+  },
+  {
+    "item_number": "999051",
+    "name": "Clamp Nut",
+    "type": "Hex Nut",
+    "size": "1/4-20",
+    "material": "Titanium",
+    "finish": "None (bare titanium)",
+    "use": "Pairs with Clamp Bolt 999050",
+    "compatible_with": ["999050"],
+    "quantity_note": "2 per clamp"
+  },
+  {
+    "item_number": "999052",
+    "name": "Connector Bolt",
+    "type": "Hex Bolt",
+    "size": "5/16-18 × 1.25\"",
+    "material": "Titanium",
+    "finish": "None (bare titanium)",
+    "use": "Securing frame-to-frame connectors RC3",
+    "compatible_with": ["191-RC3"],
+    "quantity_note": "2 per connector"
+  },
+  {
+    "item_number": "999053",
+    "name": "Connector Nut",
+    "type": "Hex Nut",
+    "size": "5/16-18",
+    "material": "Titanium",
+    "finish": "None (bare titanium)",
+    "use": "Pairs with Connector Bolt 999052",
+    "compatible_with": ["999052"],
+    "quantity_note": "2 per connector"
+  }
+]

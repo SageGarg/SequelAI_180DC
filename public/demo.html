@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sequel Anodizing Racks — Parts Assistant Demo</title>
+  <meta name="description" content="Demo page for the Sequel Anodizing Racks Parts Assistant chatbot widget.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #f0f2f5;
+      color: #1a2744;
+      min-height: 100vh;
+    }
+
+    /* Demo site header */
+    .demo-header {
+      background: #1a2744;
+      color: #fff;
+      padding: 16px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .demo-logo {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    .demo-logo span {
+      color: #64b5f6;
+    }
+
+    .demo-nav {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .demo-nav a {
+      color: rgba(255,255,255,0.75);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .demo-nav a:hover { color: #fff; }
+
+    /* Hero */
+    .demo-hero {
+      background: linear-gradient(135deg, #1a2744 0%, #2c3e6b 50%, #3a5a9c 100%);
+      color: #fff;
+      text-align: center;
+      padding: 80px 40px;
+    }
+
+    .demo-hero h1 {
+      font-size: 42px;
+      font-weight: 800;
+      margin-bottom: 16px;
+      letter-spacing: -0.5px;
+    }
+
+    .demo-hero p {
+      font-size: 18px;
+      opacity: 0.85;
+      max-width: 600px;
+      margin: 0 auto 32px;
+      line-height: 1.6;
+    }
+
+    .demo-badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 50px;
+      padding: 10px 24px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    /* Content */
+    .demo-content {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 60px 40px;
+    }
+
+    .demo-content h2 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .demo-content p {
+      font-size: 16px;
+      color: #475569;
+      line-height: 1.7;
+      margin-bottom: 24px;
+    }
+
+    .demo-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      margin-top: 32px;
+    }
+
+    .demo-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 28px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      border: 1px solid #e5e7eb;
+    }
+
+    .demo-card-icon {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+
+    .demo-card h3 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .demo-card p {
+      font-size: 14px;
+      color: #64748b;
+      margin-bottom: 0;
+    }
+
+    .demo-cta {
+      text-align: center;
+      padding: 60px 40px;
+      background: #fff;
+      margin-top: 40px;
+      border-radius: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+
+    .demo-cta h2 { margin-bottom: 12px; }
+
+    .demo-cta p {
+      max-width: 500px;
+      margin: 0 auto;
+      color: #64748b;
+    }
+
+    .demo-footer {
+      text-align: center;
+      padding: 32px 40px;
+      color: #94a3b8;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Simulated host website -->
+  <header class="demo-header">
+    <div class="demo-logo">SEQUEL <span>Anodizing Racks</span></div>
+    <nav>
+      <ul class="demo-nav">
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Catalog</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="demo-hero">
+    <h1>Precision Anodizing Rack Systems</h1>
+    <p>Industry-leading disc, clip, and rack assemblies engineered for consistent anodizing results. Built to last, designed to perform.</p>
+    <div class="demo-badge">💬 Try our AI Parts Assistant — click the button below right →</div>
+  </section>
+
+  <main class="demo-content">
+    <h2>Everything You Need for Anodizing</h2>
+    <p>From standard discs to complete rack assemblies, Sequel provides the full range of components for your anodizing operation. Our Parts Assistant chatbot can help you identify exactly what you need.</p>
+
+    <div class="demo-cards">
+      <div class="demo-card">
+        <div class="demo-card-icon">🔵</div>
+        <h3>Anodizing Discs</h3>
+        <p>Standard and specialty discs in DS1–DS6 hole styles. Available in 2"–12" diameters for any part size.</p>
+      </div>
+      <div class="demo-card">
+        <div class="demo-card-icon">🔩</div>
+        <h3>Rack Assemblies</h3>
+        <p>Complete rack systems with spines, frames, and crossbars. 2-spine to 6-spine configurations available.</p>
+      </div>
+      <div class="demo-card">
+        <div class="demo-card-icon">📎</div>
+        <h3>Clips &amp; Hooks</h3>
+        <p>Titanium clips and hooks for irregular parts. Spring, screw-adjust, and wide-jaw styles available.</p>
+      </div>
+    </div>
+
+    <div class="demo-cta">
+      <h2>Need help finding the right parts?</h2>
+      <p>Click the "Parts Assistant" button in the bottom-right corner to chat with our AI product specialist, or call us at 800-553-8273.</p>
+    </div>
+  </main>
+
+  <footer class="demo-footer">
+    <p>&copy; 2024 Sequel Anodizing Racks. This is a demo page showing the embeddable chat widget.</p>
+  </footer>
+
+  <!-- This is the only line needed to embed the widget on any website -->
+  <script src="/widget.js" data-api-url="/api/chat"></script>
+
+</body>
+</html>

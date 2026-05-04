@@ -1,0 +1,153 @@
+[
+  {
+    "guide_id": "SG-001",
+    "title": "Disc Selection Guide — Choosing the Right Hole Style",
+    "description": "How to select the correct disc hole style based on part geometry and contact requirements.",
+    "decision_criteria": [
+      {
+        "condition": "Round parts with a single center hole",
+        "recommendation": "DS1 hole style — single center hole provides reliable contact for round parts with existing center holes",
+        "items": ["900010–900015 (standard)", "900100–900102 (HD)"]
+      },
+      {
+        "condition": "Parts with two mounting holes or that need bilateral contact",
+        "recommendation": "DS2 hole style — double center hole pattern for parts needing two-point contact",
+        "items": ["900020–900025 (standard)", "900110–900112 (HD)"]
+      },
+      {
+        "condition": "Parts with three mounting points or that need distributed contact",
+        "recommendation": "DS3 hole style — triple offset pattern distributes contact for better anodize coverage",
+        "items": ["900030–900031"]
+      },
+      {
+        "condition": "Square or rectangular parts",
+        "recommendation": "DS4 hole style — quad-corner pattern matches rectangular geometries",
+        "items": ["900040–900043"]
+      },
+      {
+        "condition": "Flat panels needing maximum contact distribution",
+        "recommendation": "DS5 hole style — radial 6-point pattern provides the most even contact distribution for flat panels",
+        "items": ["900050–900053 (standard)", "900120–900122 (HD)"]
+      },
+      {
+        "condition": "Variable-width parts or parts that change width between batches",
+        "recommendation": "DS6 hole style — adjustable slot pattern accommodates varying part widths",
+        "items": ["900055–900058"]
+      }
+    ]
+  },
+  {
+    "guide_id": "SG-002",
+    "title": "Disc Size Selection Guide",
+    "description": "How to select the correct disc diameter based on part size.",
+    "decision_criteria": [
+      {
+        "condition": "Parts smaller than 2\" in any dimension",
+        "recommendation": "2.0\" disc — smallest available standard disc"
+      },
+      {
+        "condition": "Parts 2\"–3\" in size",
+        "recommendation": "3.0\" disc"
+      },
+      {
+        "condition": "Parts 3\"–4\" in size",
+        "recommendation": "4.0\" disc"
+      },
+      {
+        "condition": "Parts 4\"–5\" in size",
+        "recommendation": "5.0\" disc"
+      },
+      {
+        "condition": "Parts 5\"–7\" in size",
+        "recommendation": "6.0\" disc"
+      },
+      {
+        "condition": "Parts 7\"–9\" in size",
+        "recommendation": "8.0\" disc"
+      },
+      {
+        "condition": "Parts 9\"–11\" in size",
+        "recommendation": "10.0\" HD disc (HD only)"
+      },
+      {
+        "condition": "Parts 11\"+ in size",
+        "recommendation": "12.0\" HD disc (HD only)"
+      }
+    ],
+    "general_rule": "Disc diameter should be approximately equal to or slightly larger than the largest dimension of the part being anodized."
+  },
+  {
+    "guide_id": "SG-003",
+    "title": "Clip Selection Guide — When to Use Clips Instead of Discs",
+    "description": "Guidance on when clips are more appropriate than disc mounting.",
+    "decision_criteria": [
+      {
+        "condition": "Part has no flat surface for disc contact",
+        "recommendation": "Use clips — CL2 (screw-adjust) or CL3 (wide-jaw) depending on part thickness"
+      },
+      {
+        "condition": "Part is irregularly shaped (not round, square, or rectangular)",
+        "recommendation": "Use clips — specifically CL5 (alligator) for textured surfaces or CL6 (flat-face) for cosmetic parts"
+      },
+      {
+        "condition": "Part has existing holes that can serve as hanging points",
+        "recommendation": "Use hooks — HK1 (S-hook) for through-holes, HK2 (J-hook) for edge hanging"
+      },
+      {
+        "condition": "Part is tubular",
+        "recommendation": "Use HK3 (ring hook) — designed specifically for tubular parts"
+      },
+      {
+        "condition": "Part is very small (< 0.25\" in any dimension)",
+        "recommendation": "Use CL4 (micro clip) — designed for parts too small for standard clips"
+      },
+      {
+        "condition": "Part surface must not be marked",
+        "recommendation": "Use CL6 (flat-face clip) — minimizes contact marks on cosmetic surfaces"
+      }
+    ]
+  },
+  {
+    "guide_id": "SG-004",
+    "title": "Rack Frame Selection Guide",
+    "description": "How to choose the right frame size for your production needs.",
+    "decision_criteria": [
+      {
+        "condition": "Low volume, small parts, prototyping, or tank width < 8\"",
+        "recommendation": "191-FR2 Small Frame (2 spines) — 6\" wide, holds up to 2 spines"
+      },
+      {
+        "condition": "Medium volume production, tank width 8\"–14\"",
+        "recommendation": "191-FR4 Medium Frame (4 spines) — 12\" wide, holds up to 4 spines"
+      },
+      {
+        "condition": "High volume production, tank width 14\"+",
+        "recommendation": "191-FR6 Large Frame (6 spines) — 18\" wide, holds up to 6 spines"
+      },
+      {
+        "condition": "Need more than 6 spines or custom tank dimensions",
+        "recommendation": "Use Frame-to-Frame Connectors (191-RC3) to gang multiple frames together. Contact Sequel at 800-553-8273 for custom configurations."
+      }
+    ]
+  },
+  {
+    "guide_id": "SG-005",
+    "title": "Standard vs. Heavy-Duty Selection Guide",
+    "description": "When to use standard discs vs. HD discs.",
+    "decision_criteria": [
+      {
+        "condition": "Parts weigh 2.5 lbs or less each",
+        "recommendation": "Standard discs (0.125\" thick) — sufficient strength at lower cost"
+      },
+      {
+        "condition": "Parts weigh between 2.5 and 5.0 lbs each",
+        "recommendation": "HD discs (0.187\" thick) — 50% thicker for increased load capacity"
+      },
+      {
+        "condition": "Parts weigh more than 5.0 lbs",
+        "recommendation": "Contact Sequel at 800-553-8273 for custom heavy-duty solutions"
+      }
+    ],
+    "important_note": "HD discs require HD spine bolts (999020) and HD spine nuts (999021) — standard spine bolts are too short for the thicker disc."
+  }
+]

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sequel RAG — Admin Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: #f0f2f5; color: #1a2744; min-height: 100vh; }
+
+    /* Login overlay */
+    .admin-login-overlay {
+      position: fixed; inset: 0; background: #1a2744;
+      display: flex; align-items: center; justify-content: center; z-index: 10000;
+    }
+    .admin-login-overlay.hidden { display: none; }
+    .admin-login-box {
+      background: #fff; border-radius: 16px; padding: 48px; width: 380px;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.2); text-align: center;
+    }
+    .admin-login-box h1 { font-size: 22px; margin-bottom: 8px; }
+    .admin-login-box p { font-size: 14px; color: #64748b; margin-bottom: 24px; }
+    .admin-login-box input {
+      width: 100%; padding: 12px 16px; border: 1px solid #d0d5dd; border-radius: 8px;
+      font-size: 14px; margin-bottom: 16px; font-family: inherit; outline: none;
+    }
+    .admin-login-box input:focus { border-color: #1a2744; }
+    .admin-login-box button {
+      width: 100%; padding: 12px; background: #1a2744; color: #fff; border: none;
+      border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer;
+    }
+    .admin-login-box button:hover { background: #243355; }
+    .admin-login-error { color: #ef4444; font-size: 13px; margin-top: 12px; display: none; }
+
+    /* Dashboard */
+    .admin-dashboard { display: none; }
+    .admin-dashboard.visible { display: block; }
+
+    .admin-header {
+      background: #1a2744; color: #fff; padding: 20px 32px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .admin-header h1 { font-size: 20px; font-weight: 700; }
+    .admin-header-actions { display: flex; gap: 12px; align-items: center; }
+    .admin-header-actions button {
+      background: rgba(255,255,255,0.15); color: #fff; border: none; border-radius: 8px;
+      padding: 8px 16px; font-size: 13px; font-weight: 500; cursor: pointer;
+      font-family: inherit;
+    }
+    .admin-header-actions button:hover { background: rgba(255,255,255,0.25); }
+    .admin-header-actions .btn-primary {
+      background: #3b82f6;
+    }
+    .admin-header-actions .btn-primary:hover { background: #2563eb; }
+
+    .admin-body { max-width: 1200px; margin: 0 auto; padding: 24px; }
+
+    /* Stats cards */
+    .stats-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px; margin-bottom: 24px;
+    }
+    .stat-card {
+      background: #fff; border-radius: 12px; padding: 20px 24px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06); border: 1px solid #e5e7eb;
+    }
+    .stat-card-label { font-size: 12px; color: #64748b; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; }
+    .stat-card-value { font-size: 32px; font-weight: 800; margin-top: 4px; }
+    .stat-card-sub { font-size: 12px; color: #94a3b8; margin-top: 4px; }
+
+    /* Tabs */
+    .admin-tabs {
+      display: flex; gap: 4px; margin-bottom: 20px; background: #fff;
+      border-radius: 10px; padding: 4px; border: 1px solid #e5e7eb; width: fit-content;
+    }
+    .admin-tab {
+      padding: 8px 20px; border-radius: 8px; border: none; background: transparent;
+      font-size: 13px; font-weight: 500; cursor: pointer; color: #64748b;
+      font-family: inherit;
+    }
+    .admin-tab.active { background: #1a2744; color: #fff; }
+    .admin-tab:hover:not(.active) { background: #f1f5f9; }
+
+    /* Tab panels */
+    .tab-panel { display: none; }
+    .tab-panel.active { display: block; }
+
+    /* Queries table */
+    .queries-table-wrap {
+      background: #fff; border-radius: 12px; overflow: hidden;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06); border: 1px solid #e5e7eb;
+    }
+    .queries-table {
+      width: 100%; border-collapse: collapse; font-size: 13px;
+    }
+    .queries-table th {
+      text-align: left; padding: 12px 16px; background: #f8fafc;
+      font-weight: 600; color: #475569; border-bottom: 1px solid #e5e7eb;
+      font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px;
+    }
+    .queries-table td {
+      padding: 10px 16px; border-bottom: 1px solid #f1f5f9;
+      max-width: 300px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+    }
+    .queries-table tr:hover td { background: #f8fafc; }
+    .badge {
+      display: inline-block; padding: 2px 8px; border-radius: 4px;
+      font-size: 11px; font-weight: 600;
+    }
+    .badge-yes { background: #dcfce7; color: #166534; }
+    .badge-no { background: #fee2e2; color: #991b1b; }
+    .badge-high { background: #dbeafe; color: #1e40af; }
+    .badge-medium { background: #fef3c7; color: #92400e; }
+    .badge-low { background: #fee2e2; color: #991b1b; }
+    .badge-intent { background: #f1f5f9; color: #475569; }
+
+    /* Report display */
+    .report-display {
+      background: #fff; border-radius: 12px; padding: 32px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06); border: 1px solid #e5e7eb;
+      line-height: 1.7; font-size: 14px;
+    }
+    .report-display h1 { font-size: 24px; margin-bottom: 20px; }
+    .report-display h2 { font-size: 18px; margin-top: 28px; margin-bottom: 12px; color: #1a2744; }
+    .report-display h3 { font-size: 15px; margin-top: 20px; margin-bottom: 8px; }
+    .report-display ul, .report-display ol { padding-left: 24px; margin: 8px 0; }
+    .report-display li { margin-bottom: 4px; }
+    .report-display p { margin-bottom: 12px; }
+    .report-display strong { font-weight: 700; }
+    .report-display code { background: #f1f5f9; padding: 2px 6px; border-radius: 4px; font-size: 13px; }
+    .report-empty { color: #94a3b8; text-align: center; padding: 60px; }
+
+    .loading { text-align: center; padding: 40px; color: #94a3b8; }
+    .refresh-note { font-size: 12px; color: #94a3b8; margin-bottom: 16px; }
+  </style>
+</head>
+<body>
+
+  <!-- Login Screen -->
+  <div class="admin-login-overlay" id="loginOverlay">
+    <div class="admin-login-box">
+      <h1>🔒 Admin Dashboard</h1>
+      <p>Enter the admin password to access analytics</p>
+      <input type="password" id="loginPassword" placeholder="Password" autofocus />
+      <button id="loginBtn" onclick="attemptLogin()">Sign In</button>
+      <div class="admin-login-error" id="loginError">Invalid password. Try again.</div>
+    </div>
+  </div>
+
+  <!-- Dashboard -->
+  <div class="admin-dashboard" id="dashboard">
+    <header class="admin-header">
+      <h1>📊 Sequel RAG — Analytics Dashboard</h1>
+      <div class="admin-header-actions">
+        <button onclick="loadStats()">↻ Refresh</button>
+        <button class="btn-primary" onclick="runReport()">▶ Run Report</button>
+        <button onclick="logout()">Logout</button>
+      </div>
+    </header>
+
+    <div class="admin-body">
+      <!-- Stats -->
+      <div class="stats-grid" id="statsGrid">
+        <div class="stat-card">
+          <div class="stat-card-label">Total Queries</div>
+          <div class="stat-card-value" id="statTotal">—</div>
+          <div class="stat-card-sub">Last 7 days</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card-label">Answered</div>
+          <div class="stat-card-value" id="statAnswered">—</div>
+          <div class="stat-card-sub" id="statRate">—</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card-label">Unanswered</div>
+          <div class="stat-card-value" id="statUnanswered">—</div>
+          <div class="stat-card-sub">Needs attention</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-card-label">Top Item</div>
+          <div class="stat-card-value" id="statTopItem" style="font-size: 20px;">—</div>
+          <div class="stat-card-sub">Most requested</div>
+        </div>
+      </div>
+
+      <!-- Tabs -->
+      <div class="admin-tabs">
+        <button class="admin-tab active" onclick="switchTab('queries')">Recent Queries</button>
+        <button class="admin-tab" onclick="switchTab('report')">Latest Report</button>
+      </div>
+
+      <!-- Queries Tab -->
+      <div class="tab-panel active" id="tab-queries">
+        <div class="refresh-note">Showing last 50 queries</div>
+        <div class="queries-table-wrap">
+          <table class="queries-table">
+            <thead>
+              <tr>
+                <th>Timestamp</th>
+                <th>Query</th>
+                <th>Intent</th>
+                <th>Answered</th>
+                <th>Confidence</th>
+              </tr>
+            </thead>
+            <tbody id="queriesTableBody">
+              <tr><td colspan="5" class="loading">Loading...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Report Tab -->
+      <div class="tab-panel" id="tab-report">
+        <div class="report-display" id="reportDisplay">
+          <div class="report-empty">No report generated yet. Click "Run Report" to generate one.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var internalKey = '';
+
+    // ── Login ──
+    document.getElementById('loginPassword').addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') attemptLogin();
+    });
+
+    async function attemptLogin() {
+      var password = document.getElementById('loginPassword').value;
+      try {
+        var resp = await fetch('/api/analytics/verify-password', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ password: password })
+        });
+        var data = await resp.json();
+        if (data.valid) {
+          internalKey = data.internalKey;
+          document.getElementById('loginOverlay').classList.add('hidden');
+          document.getElementById('dashboard').classList.add('visible');
+          loadStats();
+          loadQueries();
+          loadReport();
+        } else {
+          document.getElementById('loginError').style.display = 'block';
+        }
+      } catch (e) {
+        alert('Connection error. Is the server running?');
+      }
+    }
+
+    function logout() {
+      internalKey = '';
+      document.getElementById('loginOverlay').classList.remove('hidden');
+      document.getElementById('dashboard').classList.remove('visible');
+      document.getElementById('loginPassword').value = '';
+      document.getElementById('loginError').style.display = 'none';
+    }
+
+    // ── Stats ──
+    async function loadStats() {
+      try {
+        var resp = await fetch('/api/analytics/stats', {
+          headers: { 'x-internal-key': internalKey }
+        });
+        var data = await resp.json();
+        document.getElementById('statTotal').textContent = data.total_queries;
+        document.getElementById('statAnswered').textContent = data.answered;
+        document.getElementById('statUnanswered').textContent = data.unanswered;
+        document.getElementById('statRate').textContent = (data.answer_rate * 100).toFixed(1) + '% answer rate';
+        document.getElementById('statTopItem').textContent = data.top_items[0] || '—';
+      } catch (e) {
+        console.error('Failed to load stats:', e);
+      }
+    }
+
+    // ── Queries ──
+    async function loadQueries() {
+      try {
+        var resp = await fetch('/api/analytics/queries?limit=50', {
+          headers: { 'x-internal-key': internalKey }
+        });
+        var data = await resp.json();
+        var tbody = document.getElementById('queriesTableBody');
+
+        if (!data.queries || data.queries.length === 0) {
+          tbody.innerHTML = '<tr><td colspan="5" class="loading">No queries yet. Send a message through the widget first.</td></tr>';
+          return;
+        }
+
+        tbody.innerHTML = data.queries.map(function(q) {
+          var ts = new Date(q.timestamp).toLocaleString();
+          var answered = q.was_answered ? '<span class="badge badge-yes">Yes</span>' : '<span class="badge badge-no">No</span>';
+          var confClass = q.answer_confidence === 'high' ? 'badge-high' : q.answer_confidence === 'medium' ? 'badge-medium' : 'badge-low';
+          var confidence = '<span class="badge ' + confClass + '">' + (q.answer_confidence || '—') + '</span>';
+          var intent = '<span class="badge badge-intent">' + (q.intent || '—') + '</span>';
+          return '<tr>' +
+            '<td>' + ts + '</td>' +
+            '<td title="' + escapeHtml(q.raw_query) + '">' + escapeHtml(q.raw_query) + '</td>' +
+            '<td>' + intent + '</td>' +
+            '<td>' + answered + '</td>' +
+            '<td>' + confidence + '</td>' +
+          '</tr>';
+        }).join('');
+      } catch (e) {
+        console.error('Failed to load queries:', e);
+      }
+    }
+
+    // ── Report ──
+    async function loadReport() {
+      try {
+        var resp = await fetch('/api/analytics/report', {
+          headers: { 'x-internal-key': internalKey }
+        });
+        var data = await resp.json();
+        var display = document.getElementById('reportDisplay');
+
+        if (data.report_markdown) {
+          display.innerHTML = renderMarkdown(data.report_markdown);
+        } else {
+          display.innerHTML = '<div class="report-empty">No report generated yet. Click "Run Report" to generate one.</div>';
+        }
+      } catch (e) {
+        console.error('Failed to load report:', e);
+      }
+    }
+
+    async function runReport() {
+      if (!confirm('Generate a new analytics report? This will call the Claude API.')) return;
+      try {
+        var btn = document.querySelector('.btn-primary');
+        btn.textContent = '⏳ Generating...';
+        btn.disabled = true;
+
+        var resp = await fetch('/api/analytics/run', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'x-internal-key': internalKey
+          },
+          body: JSON.stringify({ days: 7 })
+        });
+        var data = await resp.json();
+
+        btn.textContent = '▶ Run Report';
+        btn.disabled = false;
+
+        if (data.success) {
+          alert('Report generated successfully!');
+          loadReport();
+          loadStats();
+        } else {
+          alert('Report generation failed: ' + (data.error || 'Unknown error'));
+        }
+      } catch (e) {
+        alert('Error: ' + e.message);
+        document.querySelector('.btn-primary').textContent = '▶ Run Report';
+        document.querySelector('.btn-primary').disabled = false;
+      }
+    }
+
+    // ── Tabs ──
+    function switchTab(tabName) {
+      document.querySelectorAll('.admin-tab').forEach(function(t) { t.classList.remove('active'); });
+      document.querySelectorAll('.tab-panel').forEach(function(p) { p.classList.remove('active'); });
+      document.getElementById('tab-' + tabName).classList.add('active');
+      event.target.classList.add('active');
+    }
+
+    // ── Helpers ──
+    function escapeHtml(str) {
+      if (!str) return '';
+      return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    }
+
+    function renderMarkdown(md) {
+      var html = escapeHtml(md);
+      // Headers
+      html = html.replace(/^### (.+)$/gm, '<h3>$1</h3>');
+      html = html.replace(/^## (.+)$/gm, '<h2>$1</h2>');
+      html = html.replace(/^# (.+)$/gm, '<h1>$1</h1>');
+      // Bold
+      html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+      // Inline code
+      html = html.replace(/`(.+?)`/g, '<code>$1</code>');
+      // Bullet lists
+      html = html.replace(/^- (.+)$/gm, '<li>$1</li>');
+      html = html.replace(/(<li>.*<\/li>\n?)+/g, function(m) { return '<ul>' + m + '</ul>'; });
+      // Numbered lists
+      html = html.replace(/^\d+\. (.+)$/gm, '<li>$1</li>');
+      // Horizontal rules
+      html = html.replace(/^---$/gm, '<hr>');
+      // Paragraphs (lines not already wrapped)
+      html = html.replace(/\n\n/g, '</p><p>');
+      html = html.replace(/\n/g, '<br>');
+      html = '<p>' + html + '</p>';
+      // Clean up empty tags
+      html = html.replace(/<p><\/p>/g, '');
+      html = html.replace(/<p>(<h[123]>)/g, '$1');
+      html = html.replace(/(<\/h[123]>)<\/p>/g, '$1');
+      html = html.replace(/<p>(<ul>)/g, '$1');
+      html = html.replace(/(<\/ul>)<\/p>/g, '$1');
+      html = html.replace(/<p>(<hr>)<\/p>/g, '$1');
+      return html;
+    }
+  </script>
+
+</body>
+</html>
