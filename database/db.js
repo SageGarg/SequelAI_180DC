@@ -197,11 +197,103 @@ function getAllQueriesForAnalytics(days = 7) {
   `).all(cutoffStr);
 }
 
+/**
+ * getFullStats — returns everything the dashboard needs in one call
+ */
+function getFullStats(days = 7) {
+  const cutoff = new Date();
+  cutoff.setDate(cutoff.getDate() - days);
+  const cutoffStr = cutoff.toISOString();
+
+  const totals = db.prepare(`
+    SELECT
+      COUNT(*) as total_queries,
+      SUM(CASE WHEN was_answered = 1 THEN 1 ELSE 0 END) as answered,
+      SUM(CASE WHEN was_answered = 0 THEN 1 ELSE 0 END) as unanswered,
+      SUM(CASE WHEN fallback_triggered = 1 THEN 1 ELSE 0 END) as fallback_count,
+      COUNT(DISTINCT session_id) as unique_sessions,
+      AVG(response_time_ms) as avg_response_ms
+    FROM query_logs WHERE timestamp >= ?
+  `).get(cutoffStr);
+
+  const intents = db.prepare(`
+    SELECT intent, COUNT(*) as count
+    FROM query_logs WHERE timestamp >= ? AND intent IS NOT NULL
+    GROUP BY intent ORDER BY count DESC
+  `).all(cutoffStr);
+
+  const daily = db.prepare(`
+    SELECT
+      date(timestamp) as date,
+      COUNT(*) as total,
+      SUM(CASE WHEN was_answered = 1 THEN 1 ELSE 0 END) as answered
+    FROM query_logs WHERE timestamp >= ?
+    GROUP BY date(timestamp) ORDER BY date ASC
+  `).all(cutoffStr);
+
+  const itemRows = db.prepare(`
+    SELECT items_surfaced FROM query_logs
+    WHERE timestamp >= ? AND items_surfaced IS NOT NULL
+  `).all(cutoffStr);
+
+  const itemCounts = {};
+  for (const row of itemRows) {
+    try {
+      for (const item of JSON.parse(row.items_surfaced)) {
+        itemCounts[item] = (itemCounts[item] || 0) + 1;
+      }
+    } catch (e) {}
+  }
+  const topItems = Object.entries(itemCounts)
+    .sort((a, b) => b[1] - a[1]).slice(0, 10)
+    .map(([item, count]) => ({ item, count }));
+
+  const confRows = db.prepare(`
+    SELECT answer_confidence as level, COUNT(*) as count
+    FROM query_logs WHERE timestamp >= ?
+    GROUP BY answer_confidence
+  `).all(cutoffStr);
+  const confMap = { high: 0, medium: 0, low: 0, none: 0 };
+  for (const c of confRows) { if (c.level in confMap) confMap[c.level] = c.count; }
+
+  const unanswered = db.prepare(`
+    SELECT raw_query, unanswered_reason, timestamp, intent
+    FROM query_logs WHERE timestamp >= ? AND was_answered = 0
+    ORDER BY timestamp DESC LIMIT 25
+  `).all(cutoffStr);
+
+  const total = totals.total_queries || 0;
+  return {
+    period: `last_${days}_days`,
+    days,
+    totals: {
+      total_queries: total,
+      answered: totals.answered || 0,
+      unanswered: totals.unanswered || 0,
+      answer_rate: total > 0 ? Math.round((totals.answered / total) * 1000) / 10 : 0,
+      fallback_count: totals.fallback_count || 0,
+      fallback_rate: total > 0 ? Math.round((totals.fallback_count / total) * 1000) / 10 : 0,
+      unique_sessions: totals.unique_sessions || 0,
+      avg_response_ms: totals.avg_response_ms ? Math.round(totals.avg_response_ms) : null
+    },
+    intent_breakdown: intents.map(r => ({
+      intent: r.intent,
+      count: r.count,
+      pct: total > 0 ? Math.round((r.count / total) * 1000) / 10 : 0
+    })),
+    daily_volume: daily,
+    top_items: topItems,
+    confidence_breakdown: confMap,
+    unanswered_queries: unanswered
+  };
+}
+
 module.exports = {
   db,
   insertQueryLog,
   getRecentQueries,
   getQueryStats,
+  getFullStats,
   getQueriesInRange,
   insertReport,
   getLatestReport,

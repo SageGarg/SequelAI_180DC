@@ -1,0 +1,79 @@
+[
+  {
+    "page_id": "B1",
+    "section": "Discs",
+    "title": "Standard Anodizing Discs — DS1, DS2, DS3 Hole Styles",
+    "pdf_page": 6,
+    "description": "Sequel Standard Anodizing Discs for round and flat aluminum parts. DS1: single center hole 0.250\" dia. DS2: double center hole 0.187\" dia. DS3: triple offset hole pattern 0.156\" dia. All standard discs are 0.125\" thick, 6061-T6 aluminum, Type III hard anodize. Diameters: 2.0\", 3.0\", 4.0\", 5.0\", 6.0\", 8.0\". Max load 2.5 lbs per disc. Mount using spine bolts (999010) and spine nuts (999011). Temperature rating: 200°F continuous."
+  },
+  {
+    "page_id": "B2",
+    "section": "Discs",
+    "title": "Specialty Anodizing Discs — DS4, DS5, DS6 Hole Styles",
+    "pdf_page": 7,
+    "description": "Sequel Specialty Anodizing Discs for non-standard parts. DS4: quad-corner pattern 4 holes at 0.187\" dia, 90° spacing, for square/rectangular parts. DS5: radial 6-point pattern 6 holes at 0.156\" dia, 60° spacing, for flat panels. DS6: adjustable slot pattern 2 slots 0.125\" × 0.500\" for variable-width parts. Specialty discs available 4.0\", 5.0\", 6.0\", 8.0\". All 0.125\" thick, 6061-T6 aluminum, Type III hard anodize. Mount using spine bolts (999010) and spine nuts (999011)."
+  },
+  {
+    "page_id": "B3",
+    "section": "Discs",
+    "title": "Heavy-Duty Anodizing Discs — HD Series",
+    "pdf_page": 8,
+    "description": "Sequel Heavy-Duty Anodizing Discs for larger and heavier aluminum parts. HD discs are 0.187\" thick (50% thicker than standard). Available in DS1, DS2, and DS5 hole styles. Diameters: 6.0\", 8.0\", 10.0\", 12.0\". Max load 5.0 lbs per disc. Require HD spine bolts (999020) and HD spine nuts (999021) due to increased thickness. Temperature rating: 200°F continuous."
+  },
+  {
+    "page_id": "C1",
+    "section": "Racks",
+    "title": "Standard Rack Spines",
+    "pdf_page": 10,
+    "description": "Sequel Standard Rack Spines are the backbone of every anodizing rack assembly. 6061-T6 aluminum, Type III hard anodize. Pre-drilled mounting holes at 1.0\" intervals. Cross-section: 0.750\" × 0.750\" square. Available lengths: 12\", 18\", 24\", 36\", 48\". Titanium contact wire attachment points at both ends. Mount to frames using frame bolts (999030) and frame nuts (999031). Max discs per spine: 12\"=10, 18\"=16, 24\"=22, 36\"=34, 48\"=46."
+  },
+  {
+    "page_id": "C2",
+    "section": "Racks",
+    "title": "Rack Frames and Crossbars",
+    "pdf_page": 11,
+    "description": "Sequel Rack Frames support spine-mounted disc assemblies. Frames accommodate 2, 4, or 6 spines. 6061-T6 aluminum, Type III hard anodize. Small frame (191-FR2): 2 spines, 6\" wide. Medium frame (191-FR4): 4 spines, 12\" wide. Large frame (191-FR6): 6 spines, 18\" wide. All frames 24\" tall with adjustable crossbar positions. Crossbars 191-XB12 (12\") and 191-XB18 (18\") sold separately for rigidity. Built-in hanger hooks for tank mounting. Frame bolts (999030) and frame nuts (999031) required — 2 per spine."
+  },
+  {
+    "page_id": "D1",
+    "section": "Pin Racks",
+    "title": "Pin Racks — Section D",
+    "pdf_page": 13,
+    "description": "PLACEHOLDER — Pin Rack product data has not yet been entered. Open the Sequel catalog PDF Section D and enter all pin rack item numbers, dimensions, and specifications into data/source/products.csv. Remove this placeholder entry when complete."
+  },
+  {
+    "page_id": "E1",
+    "section": "Clips",
+    "title": "Standard Anodizing Clips",
+    "pdf_page": 15,
+    "description": "Sequel Anodizing Clips for irregular shapes that cannot use disc mounting. CL1: spring clip 0.5\" jaw, 1.0 lb max. CL2: screw-adjust clip 0–1.0\" jaw, 2.0 lbs max. CL3: wide-jaw clip 0–2.0\" jaw, 3.0 lbs max. CL4: micro clip 0–0.25\" jaw, 0.5 lb max. All clips titanium. Mount to spines using clip adapters (191-CA1) and clip bolts (999040). Temperature rating: 200°F."
+  },
+  {
+    "page_id": "E2",
+    "section": "Clips",
+    "title": "Specialty Clips and Hooks",
+    "pdf_page": 16,
+    "description": "Sequel Specialty Clips and Hooks for unique mounting requirements. HK1: S-hook for parts with existing holes. HK2: J-hook for edge-hanging flat panels. HK3: ring hook for tubular parts. All hooks titanium wire 0.062\" diameter, mount directly to spine holes — no adapter needed. CL5: adjustable alligator clip 0–1.5\" jaw with serrated grip for textured surfaces. CL6: flat-face clip for cosmetic parts where marking must be minimized."
+  },
+  {
+    "page_id": "F1",
+    "section": "Hardware",
+    "title": "Spine Hardware and Contact Wire",
+    "pdf_page": 18,
+    "description": "Sequel Spine Hardware for spine assemblies. Titanium contact wire (191-TW1) provides electrical contact — available in 12\", 24\", 36\" lengths. Contact wire crimps (191-TWC) secure wire to spine attachment points. Spine spacers (191-SS1) maintain consistent disc spacing at 0.5\" intervals. Spine end caps (191-SEC) protect spine ends and prevent disc migration. All spine hardware compatible with standard and HD spines."
+  },
+  {
+    "page_id": "F2",
+    "section": "Hardware",
+    "title": "Rack Accessories and Replacement Parts",
+    "pdf_page": 19,
+    "description": "Sequel Rack Accessories: hanger hooks (191-HH1, replacement hooks for rack frames), tank bar adapters (191-TBA, for non-standard tank bars), drip shields (191-DSH, prevents solution dripping between tank transfers), rack identification tags (191-RIT, engraved aluminum for rack tracking). Any individual component can be ordered separately. Contact Sequel at 800-553-8273 for custom configurations."
+  },
+  {
+    "page_id": "G1",
+    "section": "Clamps",
+    "title": "Rack Clamps and Connectors",
+    "pdf_page": 21,
+    "description": "Sequel Rack Clamps for securing spines to frames and connecting rack sections. RC1: standard spine-to-frame clamp. RC2: quick-release spine clamp for frequent spine changes. RC3: frame-to-frame connector for ganging multiple racks. RC4: crossbar clamp for positioning crossbars on frames. All clamps 6061-T6 aluminum, Type III hard anodize. RC1 and RC2 require clamp bolts (999050) and clamp nuts (999051). RC3 requires connector bolts (999052) and connector nuts (999053)."
+  }
+]

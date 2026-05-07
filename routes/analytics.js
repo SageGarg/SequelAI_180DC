@@ -1,6 +1,6 @@
 const express = require('express');
 const { generateReport } = require('../agents/analyticsAgent');
-const { getQueryStats, getLatestReport, getRecentQueries } = require('../database/db');
+const { getQueryStats, getFullStats, getLatestReport, getRecentQueries } = require('../database/db');
 
 const router = express.Router();
 
@@ -82,6 +82,19 @@ router.post('/run', requireInternalKey, async (req, res) => {
       error: 'Failed to generate report',
       details: error.message
     });
+  }
+});
+
+/**
+ * GET /api/analytics/full-stats — All dashboard data in one call
+ */
+router.get('/full-stats', requireInternalKey, (req, res) => {
+  try {
+    const days = parseInt(req.query.days) || 7;
+    return res.json(getFullStats(days));
+  } catch (error) {
+    console.error('[Analytics] Full-stats error:', error.message);
+    return res.status(500).json({ error: 'Failed to retrieve stats' });
   }
 });
 

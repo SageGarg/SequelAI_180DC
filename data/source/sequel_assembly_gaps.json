@@ -1,0 +1,32 @@
+[
+  {
+    "gap_id": "GAP-001",
+    "category": "Discs",
+    "description": "No documentation for custom hole patterns — customers sometimes need non-standard hole configurations.",
+    "customer_impact": "Customers asking for custom hole styles are directed to call in, with no guidance on what's possible."
+  },
+  {
+    "gap_id": "GAP-002",
+    "category": "Assemblies",
+    "description": "No torque specifications for assembly fasteners — customers unsure how tight to fasten bolts.",
+    "customer_impact": "Risk of over-tightening (cracking anodize coating) or under-tightening (parts coming loose in bath)."
+  },
+  {
+    "gap_id": "GAP-003",
+    "category": "Clips",
+    "description": "No guidance on which clip style to use for specific part geometries beyond basic jaw size.",
+    "customer_impact": "Customers select wrong clip type, leading to poor contact or part marking."
+  },
+  {
+    "gap_id": "GAP-004",
+    "category": "Hardware",
+    "description": "Contact wire attachment procedure not documented — only wire lengths and crimps listed.",
+    "customer_impact": "New users struggle with wire installation, calling support for basic setup help."
+  },
+  {
+    "gap_id": "GAP-005",
+    "category": "Racks",
+    "description": "No weight capacity documentation for complete assemblies — only per-disc limits listed.",
+    "customer_impact": "Customers cannot calculate if their total load exceeds rack capacity without manual calculation."
+  }
+]

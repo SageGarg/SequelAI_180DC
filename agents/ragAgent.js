@@ -11,10 +11,6 @@ const assemblies = JSON.parse(fs.readFileSync(path.join(dataDir, 'sequel_assembl
 const fasteners = JSON.parse(fs.readFileSync(path.join(dataDir, 'sequel_fasteners.json'), 'utf-8'));
 const selectionGuides = JSON.parse(fs.readFileSync(path.join(dataDir, 'sequel_selection_guides.json'), 'utf-8'));
 
-let assemblyGaps = [];
-try {
-  assemblyGaps = JSON.parse(fs.readFileSync(path.join(dataDir, 'sequel_assembly_gaps.json'), 'utf-8'));
-} catch (e) { /* optional file */ }
 
 console.log(`[RAGAgent] Loaded catalog: ${catalogPages.length} pages, ${Object.keys(productsFlat).length} products, ${assemblies.length} assemblies, ${fasteners.length} fasteners, ${selectionGuides.length} guides`);
 
@@ -86,6 +82,7 @@ function detectSection(query) {
     'disc': 'Discs', 'disk': 'Discs', 'hole style': 'Discs',
     'ds1': 'Discs', 'ds2': 'Discs', 'ds3': 'Discs',
     'ds4': 'Discs', 'ds5': 'Discs', 'ds6': 'Discs',
+    'pin rack': 'Pin Racks', 'pin-rack': 'Pin Racks', 'pinrack': 'Pin Racks',
     'rack': 'Racks', 'spine': 'Racks', 'frame': 'Racks', 'crossbar': 'Racks',
     'clip': 'Clips', 'hook': 'Clips',
     'clamp': 'Clamps', 'connector': 'Clamps',
@@ -157,6 +154,20 @@ function buildContext(query) {
   })).sort((a, b) => b.score - a.score);
 
   const topPages = scoredPages.filter(sp => sp.score > 0).slice(0, 5);
+
+  // Always include section-detected pages even if they scored below the top 5
+  // (e.g. a Pin Racks query must always see the D1 page even if placeholder text scores low)
+  if (detectedSection && detectedSection !== 'Fasteners') {
+    const sectionPageIds = new Set(catalogPages.filter(p => p.section === detectedSection).map(p => p.page_id));
+    const alreadyIncluded = new Set(topPages.map(sp => sp.page.page_id));
+    for (const sp of scoredPages) {
+      if (sectionPageIds.has(sp.page.page_id) && !alreadyIncluded.has(sp.page.page_id)) {
+        topPages.push(sp);
+        alreadyIncluded.add(sp.page.page_id);
+      }
+    }
+  }
+
   for (const { page } of topPages) {
     contextParts.push(`CATALOG PAGE ${page.page_id} (${page.title}, PDF page ${page.pdf_page}):\n${page.raw_text}`);
     pagesUsed.add(page.page_id);

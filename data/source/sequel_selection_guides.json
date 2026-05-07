@@ -7,47 +7,32 @@
       {
         "condition": "Round parts with a single center hole",
         "recommendation": "DS1 hole style — single center hole provides reliable contact for round parts with existing center holes",
-        "items": [
-          "900010–900015 (standard)",
-          "900100–900102 (HD)"
-        ]
+        "items": ["900010–900015 (standard)", "900100–900102 (HD)"]
       },
       {
         "condition": "Parts with two mounting holes or that need bilateral contact",
         "recommendation": "DS2 hole style — double center hole pattern for parts needing two-point contact",
-        "items": [
-          "900020–900025 (standard)",
-          "900110–900112 (HD)"
-        ]
+        "items": ["900020–900025 (standard)", "900110–900112 (HD)"]
       },
       {
         "condition": "Parts with three mounting points or that need distributed contact",
         "recommendation": "DS3 hole style — triple offset pattern distributes contact for better anodize coverage",
-        "items": [
-          "900030–900031"
-        ]
+        "items": ["900030–900031"]
       },
       {
         "condition": "Square or rectangular parts",
         "recommendation": "DS4 hole style — quad-corner pattern matches rectangular geometries",
-        "items": [
-          "900040–900043"
-        ]
+        "items": ["900040–900043"]
       },
       {
         "condition": "Flat panels needing maximum contact distribution",
         "recommendation": "DS5 hole style — radial 6-point pattern provides the most even contact distribution for flat panels",
-        "items": [
-          "900050–900053 (standard)",
-          "900120–900122 (HD)"
-        ]
+        "items": ["900050–900053 (standard)", "900120–900122 (HD)"]
       },
       {
         "condition": "Variable-width parts or parts that change width between batches",
         "recommendation": "DS6 hole style — adjustable slot pattern accommodates varying part widths",
-        "items": [
-          "900055–900058"
-        ]
+        "items": ["900055–900058"]
       }
     ]
   },
