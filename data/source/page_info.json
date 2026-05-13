@@ -2,78 +2,99 @@
   {
     "page_id": "B1",
     "section": "Discs",
-    "title": "Standard Anodizing Discs — DS1, DS2, DS3 Hole Styles",
+    "title": "Table of Contents — Discs",
     "pdf_page": 6,
-    "description": "Sequel Standard Anodizing Discs for round and flat aluminum parts. DS1: single center hole 0.250\" dia. DS2: double center hole 0.187\" dia. DS3: triple offset hole pattern 0.156\" dia. All standard discs are 0.125\" thick, 6061-T6 aluminum, Type III hard anodize. Diameters: 2.0\", 3.0\", 4.0\", 5.0\", 6.0\", 8.0\". Max load 2.5 lbs per disc. Mount using spine bolts (999010) and spine nuts (999011). Temperature rating: 200°F continuous."
+    "description": "Sequel Discs section index. Disc hole styles DS1-DS11 (page B2). V-Notched Discs: models 82, 82A, 82B, 82C, 82E, 166 (page B3). Dimpled Discs: 82-1, 82-1B, 82-1D (page B4). Slotted Discs 1\" long: 82-2, 82-2F (page B4). Grooved Discs: 82-3 (page B5). Short Pointed Discs: 82-4, 82-4A, 82-4B, 82-4C, 82-4E (page B5). Pierced .14\" Discs: 82-5, 82-5A (page B6). Square Notched Discs: 82-6, 82-6A, 82-6B, 82-6C, 82-6E (page B6). Long Pointed Discs: 82-7, 82-7A, 82-7B, 82-7C, 82-7E (page B7). Slotted .50\" Discs: 82-8, 82-8F (page B7). Pierced .18\" Discs: 82-9, 82-9A (page B8). Oval Pierced Discs: 82-10 (page B8). Square End Discs: 82-11, 82-11E (page B8). Disc Collars 191-DS1/DS3/DS4/DS8/DS11 and Disc Brackets 192 (page B9)."
   },
   {
     "page_id": "B2",
     "section": "Discs",
-    "title": "Specialty Anodizing Discs — DS4, DS5, DS6 Hole Styles",
+    "title": "Disc Hole Styles + Using Discs with Collars or Brackets",
     "pdf_page": 7,
-    "description": "Sequel Specialty Anodizing Discs for non-standard parts. DS4: quad-corner pattern 4 holes at 0.187\" dia, 90° spacing, for square/rectangular parts. DS5: radial 6-point pattern 6 holes at 0.156\" dia, 60° spacing, for flat panels. DS6: adjustable slot pattern 2 slots 0.125\" × 0.500\" for variable-width parts. Specialty discs available 4.0\", 5.0\", 6.0\", 8.0\". All 0.125\" thick, 6061-T6 aluminum, Type III hard anodize. Mount using spine bolts (999010) and spine nuts (999011)."
+    "description": "Sequel Disc Hole Style options: DS1 (1/4\" x 3/4\" rectangular - use with 478 Spine), DS2 (1/2\" x 1\" rectangular), DS3 (3/4\" round), DS4 (7/8\" round), DS5 (.312\" x 3/4\" - 478 Spine), DS6 (1\" x 1\" square - NOTE: requires special holes when using 192 Disc Brackets), DS7 (.75\" x 2\" rectangular - does NOT work with 192 Disc Brackets), DS8 (.375\" x 1\" - use with 486B Spine), DS9 (.625\" x .625\" square - use with 474 Spine), DS10 (.75\" x .75\" square - use with 475 Spine, requires special holes for 192 brackets), DS11 (.25\" x 1\" - use with 485B Spine). Using Discs with Collars or Brackets: 191 Disc Collar attaches disc to spine with two 1/4-20 x 1\" bolts. For back-to-back, use 1/2\" bolts. 192 Disc Bracket used in pairs, designed for hole styles DS1, DS2, DS5, DS8, DS9, DS11."
   },
   {
     "page_id": "B3",
     "section": "Discs",
-    "title": "Heavy-Duty Anodizing Discs — HD Series",
+    "title": "82 V-Notched Disc Series + 166 V-Notched Insert Disc",
     "pdf_page": 8,
-    "description": "Sequel Heavy-Duty Anodizing Discs for larger and heavier aluminum parts. HD discs are 0.187\" thick (50% thicker than standard). Available in DS1, DS2, and DS5 hole styles. Diameters: 6.0\", 8.0\", 10.0\", 12.0\". Max load 5.0 lbs per disc. Require HD spine bolts (999020) and HD spine nuts (999021) due to increased thickness. Temperature rating: 200°F continuous."
+    "description": "82 Series V-Notched Discs: 30-finger discs with V-shaped notches, .37\" wide fingers, 9\" flat diameter. Model 82 is flat. 82A is formed 8.75\" dia x .5\" deep with slight bend at tip. 82B is formed 8.5\" dia x 1.18\" deep with slight bend at tip. 82C is formed 8.0\" dia x 1.25\" deep. 82E is formed 8.125\" dia x .75\" deep with 70° bends. For 3-point contact use a 166 Disc with an 82C Disc. 166 V-Notched Insert Disc: 30-finger, 4.75\" diameter, .37\" deep form, used with 82A or 82C Disc. Available in all 11 hole styles (DS1-DS11) and two aluminum thicknesses (.063\" and .080\")."
+  },
+  {
+    "page_id": "B4",
+    "section": "Discs",
+    "title": "82-1 Dimpled Disc Series + 82-2 Slotted Disc Series",
+    "pdf_page": 9,
+    "description": "82-1 Series Dimpled Discs: 30-finger flat disc with .12\" diameter dimples to help hold parts. Model 82-1 is flat 9\" diameter. 82-1B is formed 8.5\" dia x 1.18\" deep with slight bend at tip. 82-1D is formed 8.93\" dia x .25\" deep with slight bend at tip. 82-2 Series Slotted Discs: 30-finger flat disc with 1\" x .17\" slots, ideal for racking disc-shaped pieces. Model 82-2 is flat 9\" diameter. 82-2F is formed 8.87\" dia x .18\" deep. For smaller slot see 82-8 Series. Use with 191 Disc Collars. All available in 11 hole styles and two thicknesses."
+  },
+  {
+    "page_id": "B5",
+    "section": "Discs",
+    "title": "82-3 Grooved Disc + 82-4 Short Pointed Disc Series",
+    "pdf_page": 10,
+    "description": "82-3 Grooved Disc: 30-finger flat disc with .03\" wide x .008\" deep groove, 9\" flat diameter. Used to rack disc-shaped pieces. 82-4 Series Short Pointed Discs: 30-finger discs with V-shaped points, .37\" wide fingers, 9\" flat diameter. Model 82-4 is flat. 82-4A is formed 8.75\" dia x .5\" deep. 82-4B is formed 8.5\" dia x 1.18\" deep. 82-4C is formed 8.0\" dia x 1.25\" deep. 82-4E is formed 8.12\" dia x .75\" deep with 70° bends. Ideal for racking small tubes or parts with holes. For longer point see 82-7 Series."
+  },
+  {
+    "page_id": "B6",
+    "section": "Discs",
+    "title": "82-5 Pierced (.14\") Disc Series + 82-6 Square Notched Disc Series",
+    "pdf_page": 11,
+    "description": "82-5 Series Pierced Discs: 30-finger flat disc with .145\" diameter holes, 9\" flat diameter. Used to rack small parts. Model 82-5 is flat. 82-5A is formed 8.75\" dia x .62\" deep. For larger hole see 82-9 Series. 82-6 Series Square Notched Discs: 30-finger discs with .09\"w x .02\"dp notches, .37\" wide fingers. Model 82-6 is flat 9\" diameter. 82-6A is formed 8.75\" dia x .5\" deep. 82-6B is formed 8.5\" dia x 1.18\" deep. 82-6C is formed 8.0\" dia x 1.25\" deep. 82-6E is formed 8.12\" dia x .75\" deep with 70° bends."
+  },
+  {
+    "page_id": "B7",
+    "section": "Discs",
+    "title": "82-7 Long Pointed Disc Series + 82-8 Slotted Disc Series",
+    "pdf_page": 12,
+    "description": "82-7 Series Long Pointed Discs: 30-finger discs with long V-shaped points, .06\" tips, .37\" wide fingers, 9\" flat diameter. Model 82-7 is flat. 82-7A is formed 8.75\" dia x .5\" deep. 82-7B is formed 8.5\" dia x 1.18\" deep. 82-7C is formed 8.0\" dia x 1.25\" deep. 82-7E is formed 8.125\" dia x .75\" deep with 70° bends. For shorter point see 82-4 Series. 82-8 Series Slotted Discs: 30-finger flat disc with .50\" x .17\" slots, ideal for racking small tubes or parts with holes. Model 82-8 is flat 9\" diameter. 82-8F is formed 8.87\" dia x .18\" deep. For larger slot see 82-2 Series."
+  },
+  {
+    "page_id": "B8",
+    "section": "Discs",
+    "title": "82-9 Pierced (.18\") + 82-10 Oval Pierced + 82-11 Square-End Disc Series",
+    "pdf_page": 13,
+    "description": "82-9 Series Pierced Discs: 30-finger discs with .185\" diameter holes, .37\" wide fingers, 9\" flat diameter. Model 82-9 is flat. 82-9A is formed 8.75\" dia x .5\" deep with slight bend at tip. For smaller hole see 82-5 Series. 82-10 Oval Pierced Disc: 30-finger flat disc with .17\" dia x .25\" long oval holes, 9\" flat diameter. 82-11 Series Square-End Discs: 30-finger discs, .37\" wide fingers, 9\" flat diameter. Model 82-11 is flat. 82-11E is formed 8.12\" dia x .75\" deep with 70° bends. Used with 191 Disc Collar and 82-2 or 82-8 Slotted Disc, or with 82-10 Oval Pierced Disc, or with 82-6E U-Notched Disc."
+  },
+  {
+    "page_id": "B9",
+    "section": "Discs",
+    "title": "191 Disc Collars + 192 Disc Bracket",
+    "pdf_page": 14,
+    "description": "191 Disc Collars attach Sequel Discs to Spines using two 1/4-20 x 1\" Bolts. For back-to-back applications, bolt another Disc to the other side using 1/2\" bolts. Adjust disc vertically on Spine by tightening 1/4-20 side bolt. Available in five variants: 191-DS1 for 1/4\" x 3/4\" Spine (item 998071-DS1), 191-DS3 for 3/4\" Dia Spine (998071-DS3), 191-DS4 for 7/8\" Dia Spine - also fits Model 474 5/8\" x 5/8\" Plain Spine (998071-DS4), 191-DS8 for 3/8\" x 1\" Spine (998071-DS8), 191-DS11 for 1/4\" x 1\" Spine (998071-DS11). All 6061-T6 aluminum, 1/4-20 fasteners not included. 192 Disc Bracket (item 998070): .187\" thick 6063 aluminum, used in pairs to attach disc to spine. Designed for hole styles DS1, DS2, DS5, DS8, DS9, DS11. May also be used with DS6 and DS10 if discs ordered with special mounting holes (additional charge)."
   },
   {
     "page_id": "C1",
     "section": "Racks",
-    "title": "Standard Rack Spines",
-    "pdf_page": 10,
-    "description": "Sequel Standard Rack Spines are the backbone of every anodizing rack assembly. 6061-T6 aluminum, Type III hard anodize. Pre-drilled mounting holes at 1.0\" intervals. Cross-section: 0.750\" × 0.750\" square. Available lengths: 12\", 18\", 24\", 36\", 48\". Titanium contact wire attachment points at both ends. Mount to frames using frame bolts (999030) and frame nuts (999031). Max discs per spine: 12\"=10, 18\"=16, 24\"=22, 36\"=34, 48\"=46."
-  },
-  {
-    "page_id": "C2",
-    "section": "Racks",
-    "title": "Rack Frames and Crossbars",
-    "pdf_page": 11,
-    "description": "Sequel Rack Frames support spine-mounted disc assemblies. Frames accommodate 2, 4, or 6 spines. 6061-T6 aluminum, Type III hard anodize. Small frame (191-FR2): 2 spines, 6\" wide. Medium frame (191-FR4): 4 spines, 12\" wide. Large frame (191-FR6): 6 spines, 18\" wide. All frames 24\" tall with adjustable crossbar positions. Crossbars 191-XB12 (12\") and 191-XB18 (18\") sold separately for rigidity. Built-in hanger hooks for tank mounting. Frame bolts (999030) and frame nuts (999031) required — 2 per spine."
+    "title": "Racks — V-Notched, Square, Tapered, Pointed, Split Finger, HD Box Rack",
+    "pdf_page": 15,
+    "description": "Sequel Racks: full catalog of anodizing rack sections covering PDF pages 15-47. V-Notched Racks include the 21 Series (7\" finger, .06\" tips, 28° notches with forms 09/025/030), 25A Series (6\" finger, 60° notches with forms 01/02/06/07/014/023-032), 28 Series (90° notches, sharp tips with forms 02/09/010/025/030), 156 Series (30° notches), 161 Series (40° notches with forms 01/02/09/010/014/015/025/030/032), 196/198/200/300 Series (.06\" tips, 90° notches for box racks with forms 01/02/010/015), 308 Series (8\" finger), 314 Series (10\" finger). Round Notched (158A .12\" dia, 158B .31\" dia), Bevel Notched (157), Side V-Notched (133), Square Side-Notched (132, 132X), Round Side-Notched (132M). Pierced (105P with .14\"/.20\"/.265\" hole sizes), Dimpled (105D, 109DP). Pointed Racks (167-3R, 167-6R, 169 Small Utility Rack, 170, 171, 193, 300P, 307, 313, 185037, 185062, 186062). Square Racks (101 with .25\" CTC fingers, 102 .31\", 103 .37\", 105 .50\", 110 .75\", 111, 113, 147, 148, 306, 311, 312, plus the 23018-23125 series and 184018-184187 series with varying tip widths .18\"-1.87\" for racking channels and tubes). Tapered Racks (25 .25\" tips, 25W .037\", 26 .06\", 27 .12\", 99 .18\" with form variants 01/01-4W/02/06/07/010/014/016/017/022-026). Angled Racks (136, 137, 226, 229, 232, 235). Split Finger Racks (22 28° notches with forms 018/019/025, 24 Square, 306SFN 45° notches, 311SFN 30° notches with form 015). High Density Box Racks (183/183W complete assemblies in 36/42/48/54\" spines, modular 184/184W top plate + 185/185W middle plate + 186/186W lower plate, plus 180 HD Plate, 181 HD Bracket, 182/182W HD Spring Fingers, 191 HD Collar, 192 HD Angle Bracket, 486B HD Aluminum Spine). Most racks available in lengths 12/18/24/30/36/42/48 inches, hole styles RK1-RK9, and aluminum thicknesses .063/.080/.090/.125."
   },
   {
     "page_id": "D1",
     "section": "Pin Racks",
-    "title": "Pin Racks — Section D",
-    "pdf_page": 13,
-    "description": "PLACEHOLDER — Pin Rack product data has not yet been entered. Open the Sequel catalog PDF Section D and enter all pin rack item numbers, dimensions, and specifications into data/source/products.csv. Remove this placeholder entry when complete."
+    "title": "Pin Racks — 2-Way / 4-Way / 6-Way + Multi Pin-Group + Utility Rack Holders",
+    "pdf_page": 48,
+    "description": "Sequel Pin Racks for racking parts with holes or for hanging operations. Available in three primary configurations: 2-Way (pins protrude two opposing sides), 4-Way (pins protrude four sides at 90° offset), and 6-Way (pins protrude six sides at 60° offset). Single pin-group versions: 2W has 4-52 pins per rack, 4W has 8-150 pins, 6W has 18-150 pins. Pin diameters available: 1 = .125\" / 2 = .156\" (5/32\") / 3 = .187\" (3/16\") / 4 = .250\" (1/4\") / 6 = .144\". Pin lengths: 7\" standard, 9\" (S suffix), with notched (N) and 90° twist hook (T) options. Multi pin-group versions: 2W3P (3 pins per group on 2 sides), 4W2P (2 pins per group on 4 sides, up to 264 pins), 4W3P (3 pins per group on 4 sides, up to 150 pins), 4W4P (4 pins per group on 4 sides, up to 104 pins), 8W2P (2 pins per group on 8 sides). Horizontal Multi-Station Bars (2W1P, 2W2P) for single spine or double spine configurations. Utility Rack Holders: 6-Way URH (6W URH-24, 6W URH-36) and 12-Way URH (2W1P-6-4-2X24/X36/X3X36) hold Sequel 169-011, 169-012, 170-022, 171-022 utility racks. All pin racks uncoated for easy recycling. Reading item numbers: format is [Config]-[TotalPins]-[PinDiaCode]-[PinSpacing]-[GroupSpacing][Options] (e.g., 4W-60-2-75-1 = 4-Way, 60 pins, .156\" dia, .75\" pin spacing, 1\" group spacing)."
   },
   {
     "page_id": "E1",
     "section": "Clips",
-    "title": "Standard Anodizing Clips",
-    "pdf_page": 15,
-    "description": "Sequel Anodizing Clips for irregular shapes that cannot use disc mounting. CL1: spring clip 0.5\" jaw, 1.0 lb max. CL2: screw-adjust clip 0–1.0\" jaw, 2.0 lbs max. CL3: wide-jaw clip 0–2.0\" jaw, 3.0 lbs max. CL4: micro clip 0–0.25\" jaw, 0.5 lb max. All clips titanium. Mount to spines using clip adapters (191-CA1) and clip bolts (999040). Temperature rating: 200°F."
-  },
-  {
-    "page_id": "E2",
-    "section": "Clips",
-    "title": "Specialty Clips and Hooks",
-    "pdf_page": 16,
-    "description": "Sequel Specialty Clips and Hooks for unique mounting requirements. HK1: S-hook for parts with existing holes. HK2: J-hook for edge-hanging flat panels. HK3: ring hook for tubular parts. All hooks titanium wire 0.062\" diameter, mount directly to spine holes — no adapter needed. CL5: adjustable alligator clip 0–1.5\" jaw with serrated grip for textured surfaces. CL6: flat-face clip for cosmetic parts where marking must be minimized."
+    "title": "Clips — Notched, V-Notched, Pointed, Tapered, Square, Split Finger, Tube, A-Clip",
+    "pdf_page": 55,
+    "description": "Sequel Clips for irregular shapes or applications where disc mounting isn't appropriate. Clip hole styles: CL1 (single 3/16 rivet hole), CL2 (two 3/16 rivet holes .50\" CTC), CL3 (1/4-20 bolt hole), CL4 (two 1/4-20 holes 1\" CTC), CL5 (5/16 bolt), CL6 (two 5/16 bolts 1\" CTC), CL8 (3/8 bolt), CL10/CL11 (1/4-20 or 5/16 .875\" from end), CL12/CL15 (two 1/4-20 1\" CTC), CL14 (two 1/8 rivets .312\" CTC), CL225 (two 1/4 rivets). Clip families: Notched Clips (30, 30A, 30AM/W, 30B, 30BM/W, 30C, 30CM/W, 30M/MW, 30R, 30RM/RMW with .12\"/.25\"/.50\" wide notches). V-Notched Clips (33A-K flat clips 9\" long with various widths; 35 series formed clips with depth/extension variants; 39, 45, 46 series 90° formed clips; 90, 97 series long clips; 121, 125, 130 specialty clips; 159C, 164, 501, 504, 506, 508A formed clips; 508AIH 1.62\" Tab style). Channel Notched Clips (123BCN for 1\" hole, 123BCNN .75\", 123BCNW 1.25\", 123BCXN .50\" hole) for racking through panel holes. Round Notched Clips (159A .12\" dia, 159B .31\" dia). Pointed Clips (120, 140 series, 162, 163/163A/163AL/163AXL, 167C, 168/168A/168M/168MR/168U/168X, 174/174L, 502, 503). Tapered Clips (93, 94, 95, 96, 126, 173 series with .06\"/.12\"/.18\"/.25\"/.37\"/.62\" tip sizes and HY/M/MR/A/B form variants). Square Clips (29, 29B, 34A-D-4M series with 1\"-3\" depths, 86 series, 91, 122B/122BM, 123/123B series including 123BM/BWM/BWMR/BWMS, 124/124H, 507, 508) plus extensive width matrix 6x.375\" through 9x3\". Split Finger Clips (87, 89, 92, 92M/MR, 123AM with .12\" or .25\" slots). End Slot Clips (119, 123A with .12\" x .75\" slots). Tube Clips (TCS single style for .75-2.0\" tubes, TCD double style, TCA assembled clips on 36\" or 48\" spines). A-Clips (A-1/A-1V/A-1D/A-1X/A-1XV/A-1XD with .50\" or 1\" sizes, V-Notch or Standard Notch or Both, available with tapped threads for 1/4-20 bolts - for the A-Clip Anodizing Rack System with Model 486B spine, no bolts/rivets required)."
   },
   {
     "page_id": "F1",
     "section": "Hardware",
-    "title": "Spine Hardware and Contact Wire",
-    "pdf_page": 18,
-    "description": "Sequel Spine Hardware for spine assemblies. Titanium contact wire (191-TW1) provides electrical contact — available in 12\", 24\", 36\" lengths. Contact wire crimps (191-TWC) secure wire to spine attachment points. Spine spacers (191-SS1) maintain consistent disc spacing at 0.5\" intervals. Spine end caps (191-SEC) protect spine ends and prevent disc migration. All spine hardware compatible with standard and HD spines."
-  },
-  {
-    "page_id": "F2",
-    "section": "Hardware",
-    "title": "Rack Accessories and Replacement Parts",
-    "pdf_page": 19,
-    "description": "Sequel Rack Accessories: hanger hooks (191-HH1, replacement hooks for rack frames), tank bar adapters (191-TBA, for non-standard tank bars), drip shields (191-DSH, prevents solution dripping between tank transfers), rack identification tags (191-RIT, engraved aluminum for rack tracking). Any individual component can be ordered separately. Contact Sequel at 800-553-8273 for custom configurations."
+    "title": "Hardware — Spines (Plain/Pierced/Slotted), Cross Members, Mounting Angles, Hooks, Contact Bars, Fasteners",
+    "pdf_page": 87,
+    "description": "Sequel Hardware (PDF pages 87-95). Plain Aluminum Spines: 474 (.62\"x.62\" sq, 36-54\" lengths), 475 (.75\"x.75\" sq, 36-64\"), 478 (.75\"x.25\" rect, 36-60\"), 485B (1\"x.25\", 36-63\"), 486B (1\"x.37\", 36-63\"), 488B (1.25\"x.25\", 36-54\"), 490B (1.5\"x.25\", 36-63\"). Each available as SP1 (No Hook), SP2 (Standard Hook), SP3 (Hook with Twist). Pierced Aluminum Spines: 474A (pierced both sides), 474A1 (pierced one side), 475A/475A1, 478A, 485A, 486A, 488A, 490A. Pierced Titanium Spine: 589 (1.18\"x.12\", 24-60\" lengths, supplied without hook). Slotted Aluminum Spines: 484 (1\"x.25\"), 486C (1\"x.37\"), 488C (1.25\"x.25\"), 490C (1.5\"x.25\") — all with .26\" x 3.5\" slots .50\" apart, .33\" wide slots available. Slotted Titanium Spine: 586 (1\"x.37\", 24-60\"). Cross Members: 485 aluminum (12-60\" lengths), 485C slotted aluminum (16.5-48.5\"), 485TI titanium (12-52\"). Mounting Angles: 176 (1.25\"x.18\" for racks, sizes 12-48\"), 176C (slotted for clips). 177 Titanium Horizontal Mounting Bar (1\"x.37\", 18-36\"). Hooks (14\" before bending) for 475/478/485/486/488/490 spines, in N (No Bend), H (Standard Hook), HT (Hook with Twist) variants. Aluminum Contact Bar (H-Rail): HN12, HN15, HN18, HN23, HN24, HN30, HN38, HN48 (sizes 11.625\"-47.625\"). Disc Collars: 191-DS1, 191-DS3, 191-DS4, 191-DS8, 191-DS11 for various spine sizes. Disc Angle Brackets: 192 (aluminum), 192T (titanium). Fasteners: 1/4-20 Hex Head Bolts (1/2\"-2\" lengths) in aluminum 6061-T6 or case 5000 or C.P. Grade 2 Titanium. Hex Head Nuts (regular and tapered) in aluminum/titanium. Flat Washers and Conical Washers (5/8\" and 1\" OD) in aluminum/titanium. Solid Rivets 1100F aluminum (1/4\" x 3/4\", 3/16\" x 3/4\", 3/16\" x 1\")."
   },
   {
     "page_id": "G1",
     "section": "Clamps",
-    "title": "Rack Clamps and Connectors",
-    "pdf_page": 21,
-    "description": "Sequel Rack Clamps for securing spines to frames and connecting rack sections. RC1: standard spine-to-frame clamp. RC2: quick-release spine clamp for frequent spine changes. RC3: frame-to-frame connector for ganging multiple racks. RC4: crossbar clamp for positioning crossbars on frames. All clamps 6061-T6 aluminum, Type III hard anodize. RC1 and RC2 require clamp bolts (999050) and clamp nuts (999051). RC3 requires connector bolts (999052) and connector nuts (999053)."
+    "title": "Clamps — Mounting, Chem, Quick-Grip, Duraclamp, Quick-Set, Q2, Hexies",
+    "pdf_page": 96,
+    "description": "Sequel Clamps section (PDF pages 96-101). Mounting Clamps: 154-1 (1.5\" 6063 Al with 1/4-20 tapped holes), 154-2 (2\" version). Chem Clamp 155 stainless steel 300 series (1.25\" wide x 6\" long, 2.25\" clamping capacity, vinyl handles) available in 35lb (red) or 45lb (green) holding force — designed for tough corrosive applications. Quick-Grip Clamps: QGCLAMP standard nose (5/8\" wide), QGCLAMP-NN needle nose (7/16\" wide) — both chemically-resistant with stainless steel spring, .75\"-2.6\" opening. Duraclamps (chemically-resistant material with optional alumina oxide AL2O3 tips): DC318 1-1/4\", DC390 1-1/2\", DC476 1-7/8\", DC508 2\", DC635 2-1/2\", DC1016 4\" — each available no tips (T suffix for screw tip, 2T suffix for tips on both screw and body), with replacement screws. Duralok Fastening Tools: DCHT1 ratchet (tightening only), DCHT2 wrench (tighten/loosen), DCHT3 ratchet with slide collar — pre-set torque to prevent over-tightening. Duralok Sockets: DCSK-318, DCSK-476, DCSK-MULTI (for DC390/508/635), DCSK-1016. Quick-Set Clamp Assemblies (use with 475 .75\"x.75\" spine): QSASM (std notch clip), QSASM-TI (titanium clip), QSASM-W (wide notch); also sold separately: QSCLAMP (cube+screw), QSSCRW (screw only), 14 different QSCLIP variants with 4\"/5.5\"/6\"/7\" leg lengths and various notch configurations. Q2 All-Aluminum Heavy Duty Clamp (6063 Aluminum, use with 475 Spine): Q2ASM-ALBOLT (with 3/8-16x3/4 aluminum bolt), Q2ASM-TIBOLT (titanium bolt), Q2ASM-NOBOLT (body only). Hexies: HEXFL50 (50mm) and HEXFL100 (100mm) polypropylene hexagonal floats — reduce evaporation 90%, heat losses 80%, suitable up to 212°F, resistant to all metal finishing chemicals except chromic acid. 40 HEXFL50 per sq.ft., 13 HEXFL100 per sq.ft."
   }
 ]

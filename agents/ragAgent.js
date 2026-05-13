@@ -80,16 +80,31 @@ function detectSection(query) {
   const normalized = normalize(query);
   const sectionMap = {
     'disc': 'Discs', 'disk': 'Discs', 'hole style': 'Discs',
-    'ds1': 'Discs', 'ds2': 'Discs', 'ds3': 'Discs',
-    'ds4': 'Discs', 'ds5': 'Discs', 'ds6': 'Discs',
+    'ds1': 'Discs', 'ds2': 'Discs', 'ds3': 'Discs', 'ds4': 'Discs',
+    'ds5': 'Discs', 'ds6': 'Discs', 'ds7': 'Discs', 'ds8': 'Discs',
+    'ds9': 'Discs', 'ds10': 'Discs', 'ds11': 'Discs',
+    'disc collar': 'Discs', 'disc bracket': 'Discs',
     'pin rack': 'Pin Racks', 'pin-rack': 'Pin Racks', 'pinrack': 'Pin Racks',
-    'rack': 'Racks', 'spine': 'Racks', 'frame': 'Racks', 'crossbar': 'Racks',
-    'clip': 'Clips', 'hook': 'Clips',
+    '2-way pin': 'Pin Racks', '4-way pin': 'Pin Racks', '6-way pin': 'Pin Racks',
+    'utility rack holder': 'Pin Racks', 'urh': 'Pin Racks',
+    'rack': 'Racks', 'spine': 'Hardware', 'frame': 'Racks', 'crossbar': 'Hardware',
+    'cross member': 'Hardware', 'mounting angle': 'Hardware',
+    'rk1': 'Racks', 'rk3': 'Racks', 'rk5': 'Racks', 'rk7': 'Racks',
+    'rk8': 'Racks', 'rk9': 'Racks',
+    'hd box rack': 'Racks', 'high density': 'Racks',
+    'duraclamp': 'Clamps', 'quick-set': 'Clamps', 'quick set': 'Clamps',
+    'chem clamp': 'Clamps', 'quick-grip': 'Clamps', 'quick grip': 'Clamps',
+    'q2 clamp': 'Clamps', 'mounting clamp': 'Clamps', 'hexie': 'Clamps',
     'clamp': 'Clamps', 'connector': 'Clamps',
+    'tube clip': 'Clips', 'a-clip': 'Clips', 'a clip': 'Clips',
+    'clip': 'Clips', 'hook': 'Hardware',
+    'cl1': 'Clips', 'cl2': 'Clips', 'cl3': 'Clips', 'cl4': 'Clips',
+    'cl5': 'Clips', 'cl6': 'Clips',
     'bolt': 'Fasteners', 'fastener': 'Fasteners', 'screw': 'Fasteners',
-    'nut': 'Fasteners', 'washer': 'Fasteners',
+    'nut': 'Fasteners', 'washer': 'Fasteners', 'rivet': 'Fasteners',
     'hardware': 'Hardware', 'wire': 'Hardware', 'contact wire': 'Hardware',
-    'spacer': 'Hardware', 'end cap': 'Hardware'
+    'spacer': 'Hardware', 'end cap': 'Hardware', 'contact bar': 'Hardware',
+    'titanium': 'Hardware', 'spine': 'Hardware'
   };
 
   for (const [keyword, section] of Object.entries(sectionMap)) {

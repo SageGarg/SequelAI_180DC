@@ -29,8 +29,11 @@ const B = s => `\x1b[1m${s}\x1b[0m`;   // bold
 // ── Test definitions ──────────────────────────────────────────────────────────
 // Each test: { q, category, pass(context, pages), desc }
 // pass() returns 'PASS' | 'PARTIAL' | 'FAIL'
+//
+// Tests rebuilt 2026-05-07 against the actual Sequel 2024 catalog
+// (~3617 SKUs across 7 sections, replacing the original 88 AI-generated SKUs).
 
-const TESTS = [
+const TESTS_OLD_REMOVED = [
 
   // ── Disc: hole style ───────────────────────────────────────────────────────
   {
@@ -328,6 +331,210 @@ const TESTS = [
     pass: (c) => c.includes('800-553-8273') ? 'PASS' : 'PARTIAL',
     desc: 'Phone number is embedded in multiple page descriptions'
   },
+];
+
+// ── New test suite for the real 2024 Sequel catalog (3617 SKUs) ──────────────
+
+const TESTS = [
+  // ── Disc Hole Styles (DS1-DS11) ────────────────────────────────────────────
+  { category:'Disc — Hole Style', q:'What is a DS1 hole style disc?',
+    pass:(c)=>c.includes('DS1') && c.includes('B2') ? 'PASS' : 'FAIL',
+    desc:'DS1 (1/4" x 3/4" rect) should surface page B2 (Disc Hole Styles)' },
+  { category:'Disc — Hole Style', q:'Tell me about DS7 hole style',
+    pass:(c)=>c.includes('DS7') && c.includes('B2') ? 'PASS' : 'FAIL',
+    desc:'DS7 (.75" x 2" rectangular) — must reach B2' },
+  { category:'Disc — Hole Style', q:'I need DS11 discs for my 1/4 x 1 inch spine',
+    pass:(c)=>c.includes('DS11') && (c.includes('B2') || c.includes('B3')) ? 'PASS' : 'FAIL',
+    desc:'DS11 hole style — used with 485B spine' },
+  { category:'Disc — Hole Style', q:'What is a DS8 disc and what spine does it fit?',
+    pass:(c)=>c.includes('DS8') && c.includes('486B') ? 'PASS' :
+              c.includes('DS8') ? 'PARTIAL' : 'FAIL',
+    desc:'DS8 (.375" x 1") — use with 486B spine' },
+
+  // ── Disc Series by Type ────────────────────────────────────────────────────
+  { category:'Disc — Type', q:'What is an 82C disc?',
+    pass:(c)=>c.includes('82C') && c.includes('B3') ? 'PASS' : 'FAIL',
+    desc:'82C V-Notched Formed Disc 8.0" dia — B3 page' },
+  { category:'Disc — Type', q:'Do you have dimpled discs?',
+    pass:(c)=>c.includes('Dimple') && c.includes('B4') ? 'PASS' : 'FAIL',
+    desc:'82-1, 82-1B, 82-1D dimpled discs on B4' },
+  { category:'Disc — Type', q:'Show me pointed disc options',
+    pass:(c)=>(c.includes('Pointed') || c.includes('82-4') || c.includes('82-7')) ? 'PASS' : 'FAIL',
+    desc:'Should surface 82-4 short pointed or 82-7 long pointed disc series' },
+  { category:'Disc — Type', q:'Slotted discs for racking small tubes',
+    pass:(c)=>(c.includes('82-8') || c.includes('Slotted')) ? 'PASS' : 'FAIL',
+    desc:'82-8 .50" slotted or 82-2 1" slotted should appear' },
+
+  // ── Specific Item Numbers (Disc) ───────────────────────────────────────────
+  { category:'Disc — Item Lookup', q:'Item number 900000',
+    pass:(c)=>c.includes('900000') && c.includes('EXACT PRODUCT MATCH') ? 'PASS' : 'FAIL',
+    desc:'82 Flat Disc DS1 .063" — should exact-match' },
+  { category:'Disc — Item Lookup', q:'What is item 902450?',
+    pass:(c)=>c.includes('902450') && c.includes('82C') ? 'PASS' :
+              c.includes('902450') ? 'PARTIAL' : 'FAIL',
+    desc:'82C Formed Disc DS1 .063" — exact match' },
+  { category:'Disc — Item Lookup', q:'Item 905335',
+    pass:(c)=>c.includes('905335') && c.includes('166') ? 'PASS' :
+              c.includes('905335') ? 'PARTIAL' : 'FAIL',
+    desc:'166 V-Notched Insert Disc DS1 .063" — exact match' },
+
+  // ── Disc Collars / Brackets ────────────────────────────────────────────────
+  { category:'Disc Collars', q:'I need a disc collar for a 7/8 inch round spine',
+    pass:(c)=>c.includes('191-DS4') || c.includes('998071-DS4') ? 'PASS' : 'FAIL',
+    desc:'191-DS4 fits 7/8" round spine (also fits 5/8" 474 spine)' },
+  { category:'Disc Collars', q:'What disc brackets do you sell?',
+    pass:(c)=>c.includes('192') && c.includes('Bracket') ? 'PASS' : 'FAIL',
+    desc:'192 Disc Bracket for DS1/DS2/DS5/DS8/DS9/DS11 hole styles' },
+
+  // ── Pin Racks (D section) ──────────────────────────────────────────────────
+  { category:'Pin Racks', q:'What pin racks do you carry?',
+    pass:(c)=>c.includes('Pin Rack') && c.includes('D1') ? 'PASS' : 'FAIL',
+    desc:'Should surface D1 Pin Racks page' },
+  { category:'Pin Racks', q:'I need a 4-way pin rack with 60 pins',
+    pass:(c)=>(c.includes('4W-60') || c.includes('4-Way')) ? 'PASS' : 'FAIL',
+    desc:'4W-60 pin rack family' },
+  { category:'Pin Racks', q:'Item number 4W-60-2-75-1',
+    pass:(c)=>c.includes('4W-60-2-75-1') && c.includes('EXACT') ? 'PASS' :
+              c.includes('4W-60-2-75-1') ? 'PARTIAL' : 'FAIL',
+    desc:'4W-60-2-75-1 (4-Way, 60 pins, .156 dia, .75 spacing, 1" group)' },
+  { category:'Pin Racks', q:'What is a 6-way pin rack?',
+    pass:(c)=>c.includes('6-Way') || c.includes('6W') ? 'PASS' : 'FAIL',
+    desc:'6-Way Pin Rack family' },
+  { category:'Pin Racks', q:'utility rack holder for 24 inch racks',
+    pass:(c)=>(c.includes('URH-24') || c.includes('Utility Rack Holder')) ? 'PASS' : 'FAIL',
+    desc:'6W URH-24 utility rack holder' },
+
+  // ── Clamps (G section) ─────────────────────────────────────────────────────
+  { category:'Clamps', q:'I need a Duraclamp 2 inch',
+    pass:(c)=>c.includes('DC508') && c.includes('G1') ? 'PASS' :
+              c.includes('Duraclamp') ? 'PARTIAL' : 'FAIL',
+    desc:'DC508 = Duraclamp 2"' },
+  { category:'Clamps', q:'What is the largest Duraclamp?',
+    pass:(c)=>(c.includes('DC1016') || c.includes('4"')) ? 'PASS' : 'FAIL',
+    desc:'DC1016 = Duraclamp 4"' },
+  { category:'Clamps', q:'Tell me about your Chem Clamp',
+    pass:(c)=>c.includes('155') && (c.includes('Stainless') || c.includes('Chem')) ? 'PASS' : 'FAIL',
+    desc:'155 Chem Clamp Stainless Steel' },
+  { category:'Clamps', q:'Quick-Set Clamp components',
+    pass:(c)=>c.includes('QSASM') || c.includes('Quick-Set') ? 'PASS' : 'FAIL',
+    desc:'Quick-Set Clamp family' },
+  { category:'Clamps', q:'What are Hexies?',
+    pass:(c)=>c.includes('Hexie') || c.includes('HEXFL') ? 'PASS' : 'FAIL',
+    desc:'HEXFL50/HEXFL100 polypropylene tank floats' },
+
+  // ── Hardware: Spines ───────────────────────────────────────────────────────
+  { category:'Hardware — Spines', q:'I need a 36 inch slotted spine',
+    pass:(c)=>(c.includes('484') || c.includes('486C') || c.includes('488C') || c.includes('490C')) && c.includes('Slotted') ? 'PASS' :
+              c.includes('Slotted') ? 'PARTIAL' : 'FAIL',
+    desc:'484/486C/488C/490C slotted spines available 36-63"' },
+  { category:'Hardware — Spines', q:'What is item 950935?',
+    pass:(c)=>c.includes('950935') && c.includes('486B') ? 'PASS' :
+              c.includes('950935') ? 'PARTIAL' : 'FAIL',
+    desc:'486B 48" Plain Spine Standard Hook' },
+  { category:'Hardware — Spines', q:'titanium spines',
+    pass:(c)=>c.includes('Titanium') && (c.includes('586') || c.includes('589')) ? 'PASS' :
+              c.includes('Titanium') ? 'PARTIAL' : 'FAIL',
+    desc:'586 slotted titanium or 589 pierced titanium spine' },
+  { category:'Hardware — Spines', q:'I need a 48 inch spine for hanging discs',
+    pass:(c)=>(c.includes('48') && (c.includes('486B') || c.includes('485B') || c.includes('Spine'))) ? 'PASS' :
+              c.includes('Spine') ? 'PARTIAL' : 'FAIL',
+    desc:'Several 48" plain spine options' },
+
+  // ── Hardware: Hooks, Cross Members, Mounting Angles ───────────────────────
+  { category:'Hardware — Other', q:'I need a hook for a 486B spine',
+    pass:(c)=>c.includes('486') && c.includes('Hook') ? 'PASS' :
+              c.includes('Hook') ? 'PARTIAL' : 'FAIL',
+    desc:'486N/486H/486HT hooks' },
+  { category:'Hardware — Other', q:'mounting angle for racks',
+    pass:(c)=>c.includes('176') && c.includes('Mounting Angle') ? 'PASS' : 'FAIL',
+    desc:'176 Mounting Angle, sizes 12-48"' },
+  { category:'Hardware — Other', q:'cross member 24 inch',
+    pass:(c)=>c.includes('485') && c.includes('Cross Member') ? 'PASS' :
+              c.includes('Cross Member') ? 'PARTIAL' : 'FAIL',
+    desc:'485 24" aluminum cross member' },
+
+  // ── Fasteners ──────────────────────────────────────────────────────────────
+  { category:'Fasteners', q:'1/4-20 bolt 1 inch aluminum',
+    pass:(c)=>c.includes('999010') && c.includes('1/4-20') ? 'PASS' :
+              c.includes('1/4-20') ? 'PARTIAL' : 'FAIL',
+    desc:'999010 = 1/4-20 hex head bolt 1" aluminum' },
+  { category:'Fasteners', q:'titanium bolts',
+    pass:(c)=>c.includes('Titanium') && c.includes('Bolt') ? 'PASS' : 'FAIL',
+    desc:'C.P. Grade 2 titanium bolts 999060-999085' },
+  { category:'Fasteners', q:'conical washers',
+    pass:(c)=>c.includes('Conical') && c.includes('Washer') ? 'PASS' : 'FAIL',
+    desc:'5/8" or 1" conical washers in aluminum or titanium' },
+  { category:'Fasteners', q:'aluminum rivets',
+    pass:(c)=>c.includes('Rivet') && c.includes('Aluminum') ? 'PASS' :
+              c.includes('Rivet') ? 'PARTIAL' : 'FAIL',
+    desc:'1100F aluminum solid rivets 3/16 or 1/4 dia' },
+
+  // ── Clips (E section) ──────────────────────────────────────────────────────
+  { category:'Clips', q:'V-notched clips for thin parts',
+    pass:(c)=>c.includes('V-Notched') && c.includes('E1') ? 'PASS' : 'FAIL',
+    desc:'Many V-Notched clip families on E1' },
+  { category:'Clips', q:'tapered clip with .06 inch tips',
+    pass:(c)=>c.includes('94') || c.includes('Tapered') ? 'PASS' : 'FAIL',
+    desc:'94 series tapered clips with .06" tip' },
+  { category:'Clips', q:'square clips 6 x 1 inch',
+    pass:(c)=>(c.includes('Square') && c.includes('6')) || c.includes('E1') ? 'PASS' : 'FAIL',
+    desc:'6"x1" square clip series' },
+  { category:'Clips', q:'A-clip for the A-Clip rack system',
+    pass:(c)=>c.includes('A-Clip') || c.includes('A-1') ? 'PASS' : 'FAIL',
+    desc:'A-1, A-1X A-Clip series — no bolts/rivets needed' },
+  { category:'Clips', q:'tube clip for 1 inch diameter tubes',
+    pass:(c)=>(c.includes('TCS1') || c.includes('TCD1') || c.includes('Tube Clip')) ? 'PASS' : 'FAIL',
+    desc:'TCS1006/TCS1008 (single) or TCD1006/TCD1008 (double)' },
+
+  // ── Racks (C section) ──────────────────────────────────────────────────────
+  { category:'Racks', q:'V-notched rack 48 inch',
+    pass:(c)=>(c.includes('V-Notched') && c.includes('C1')) ? 'PASS' : 'FAIL',
+    desc:'Many V-Notched rack families on C1' },
+  { category:'Racks', q:'21 series rack',
+    pass:(c)=>c.includes('21') && c.includes('V-Notched') ? 'PASS' : 'FAIL',
+    desc:'21 V-Notched Rack with .06" tips, 28° notches' },
+  { category:'Racks', q:'I need a 161 rack form 015',
+    pass:(c)=>c.includes('161') && c.includes('Rack') ? 'PASS' : 'FAIL',
+    desc:'161-015 V-Notched Formed Rack' },
+  { category:'Racks', q:'high density box rack',
+    pass:(c)=>(c.includes('HD') || c.includes('183') || c.includes('184')) && c.includes('Rack') ? 'PASS' :
+              c.includes('Rack') ? 'PARTIAL' : 'FAIL',
+    desc:'183/183W HD Box Rack assemblies, 36-54" spines' },
+  { category:'Racks', q:'pointed rack with sharp tips',
+    pass:(c)=>(c.includes('Pointed') && c.includes('Rack')) ? 'PASS' : 'FAIL',
+    desc:'169, 170, 171, 300P, 307, 313 pointed racks' },
+  { category:'Racks', q:'square rack 6 inch with .75 inch tips',
+    pass:(c)=>(c.includes('23075') || c.includes('Square')) && c.includes('Rack') ? 'PASS' : 'FAIL',
+    desc:'23075 Square Rack with .75" tips' },
+  { category:'Racks', q:'split finger rack 7 inch',
+    pass:(c)=>(c.includes('Split Finger') || c.includes('22') || c.includes('24')) && c.includes('Rack') ? 'PASS' : 'FAIL',
+    desc:'22, 24, 306SFN, 311SFN split finger racks' },
+  { category:'Racks', q:'tapered rack 6 inch',
+    pass:(c)=>c.includes('Tapered') && c.includes('Rack') ? 'PASS' : 'FAIL',
+    desc:'25, 26, 27, 99 tapered rack series' },
+
+  // ── Item Number Lookups (Racks) ────────────────────────────────────────────
+  { category:'Racks — Item Lookup', q:'Item 101600',
+    pass:(c)=>c.includes('101600') && (c.includes('EXACT') || c.includes('21')) ? 'PASS' : 'FAIL',
+    desc:'21 V-Notched Rack 24" RK1 .063" — exact match' },
+  { category:'Racks — Item Lookup', q:'What is item 600040?',
+    pass:(c)=>c.includes('600040') && (c.includes('183') || c.includes('HD')) ? 'PASS' :
+              c.includes('600040') ? 'PARTIAL' : 'FAIL',
+    desc:'183 HD Box Rack Complete Assembly 36" Spine' },
+
+  // ── Edge Cases ─────────────────────────────────────────────────────────────
+  { category:'Edge Cases', q:'Item number 999999999',
+    pass:(c)=>!c.includes('EXACT PRODUCT MATCH') ? 'PASS' : 'FAIL',
+    desc:'Unknown item should NOT exact-match' },
+  { category:'Edge Cases', q:'Do you sell anodizing chemicals or tanks?',
+    pass:(c)=>c.length > 100 ? 'PARTIAL' : 'FAIL',
+    desc:'Out-of-catalog — model will say it cannot help' },
+  { category:'Edge Cases', q:'What is your phone number?',
+    pass:(c)=>c.includes('800-553-8273') ? 'PASS' : 'PARTIAL',
+    desc:'Phone embedded in page descriptions' },
+  { category:'Edge Cases', q:'Do you sell discs?',
+    pass:(c)=>c.includes('Disc') && c.includes('B') ? 'PASS' : 'FAIL',
+    desc:'Generic disc question should reach disc pages' }
 ];
 
 // ── Run tests ─────────────────────────────────────────────────────────────────

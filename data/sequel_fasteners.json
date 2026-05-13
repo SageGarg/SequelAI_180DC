@@ -1,145 +1,420 @@
 [
   {
-    "item_number": "999010",
-    "name": "Spine Bolt (Standard)",
-    "type": "Hex Bolt",
-    "size": "1/4-20 × 0.75\"",
-    "material": "",
+    "item_number": "999000",
+    "name": "1/4-20 Hex Head Bolt 1/2\" Aluminum 6061-T6",
+    "type": "Hex Head Bolt",
+    "size": "1/4-20 x 1/2\"",
+    "material": "6061-T6 Aluminum",
     "finish": "None (bare titanium)",
-    "use": "Spine Bolt (Standard) for Standard Discs (900010–900058)",
-    "compatible_with": [
-      "Standard Discs (900010–900058)"
-    ],
-    "quantity_note": "1 per disc"
+    "use": "1/4-20 Hex Head Bolt 1/2\" Aluminum 6061-T6 for see catalog",
+    "compatible_with": [],
+    "quantity_note": ""
   },
   {
-    "item_number": "999011",
-    "name": "Spine Nut (Standard)",
-    "type": "Hex Nut",
-    "size": "1/4-20",
-    "material": "",
+    "item_number": "999000CS",
+    "name": "1/4-20 Hex Head Bolt 1/2\" Aluminum Case 5000",
+    "type": "Hex Head Bolt",
+    "size": "1/4-20 x 1/2\"",
+    "material": "6061-T6 Aluminum",
     "finish": "None (bare titanium)",
-    "use": "Spine Nut (Standard) for 999010",
-    "compatible_with": [
-      "999010"
-    ],
-    "quantity_note": "1 per disc"
+    "use": "1/4-20 Hex Head Bolt 1/2\" Aluminum Case 5000 for see catalog",
+    "compatible_with": [],
+    "quantity_note": "Case of 5000"
+  },
+  {
+    "item_number": "999060",
+    "name": "1/4-20 Hex Head Bolt 1/2\" Titanium Gr 2",
+    "type": "Hex Head Bolt",
+    "size": "1/4-20 x 1/2\"",
+    "material": "C.P. Grade 2 Titanium",
+    "finish": "None (bare titanium)",
+    "use": "1/4-20 Hex Head Bolt 1/2\" Titanium Gr 2 for see catalog",
+    "compatible_with": [],
+    "quantity_note": ""
+  },
+  {
+    "item_number": "999005",
+    "name": "1/4-20 Hex Head Bolt 3/4\" Aluminum",
+    "type": "Hex Head Bolt",
+    "size": "1/4-20 x 3/4\"",
+    "material": "6061-T6 Aluminum",
+    "finish": "None (bare titanium)",
+    "use": "1/4-20 Hex Head Bolt 3/4\" Aluminum for see catalog",
+    "compatible_with": [],
+    "quantity_note": ""
+  },
+  {
+    "item_number": "999005CS",
+    "name": "1/4-20 Hex Head Bolt 3/4\" Aluminum Case 5000",
+    "type": "Hex Head Bolt",
+    "size": "1/4-20 x 3/4\"",
+    "material": "6061-T6 Aluminum",
+    "finish": "None (bare titanium)",
+    "use": "1/4-20 Hex Head Bolt 3/4\" Aluminum Case 5000 for see catalog",
+    "compatible_with": [],
+    "quantity_note": "Case of 5000"
+  },
+  {
+    "item_number": "999065",
+    "name": "1/4-20 Hex Head Bolt 3/4\" Titanium",
+    "type": "Hex Head Bolt",
+    "size": "1/4-20 x 3/4\"",
+    "material": "C.P. Grade 2 Titanium",
+    "finish": "None (bare titanium)",
+    "use": "1/4-20 Hex Head Bolt 3/4\" Titanium for see catalog",
+    "compatible_with": [],
+    "quantity_note": ""
+  },
+  {
+    "item_number": "999010",
+    "name": "1/4-20 Hex Head Bolt 1\" Aluminum",
+    "type": "Hex Head Bolt",
+    "size": "1/4-20 x 1\"",
+    "material": "6061-T6 Aluminum",
+    "finish": "None (bare titanium)",
+    "use": "1/4-20 Hex Head Bolt 1\" Aluminum for see catalog",
+    "compatible_with": [],
+    "quantity_note": ""
+  },
+  {
+    "item_number": "999010CS",
+    "name": "1/4-20 Hex Head Bolt 1\" Aluminum Case 5000",
+    "type": "Hex Head Bolt",
+    "size": "1/4-20 x 1\"",
+    "material": "6061-T6 Aluminum",
+    "finish": "None (bare titanium)",
+    "use": "1/4-20 Hex Head Bolt 1\" Aluminum Case 5000 for see catalog",
+    "compatible_with": [],
+    "quantity_note": "Case of 5000"
+  },
+  {
+    "item_number": "999070",
+    "name": "1/4-20 Hex Head Bolt 1\" Titanium",
+    "type": "Hex Head Bolt",
+    "size": "1/4-20 x 1\"",
+    "material": "C.P. Grade 2 Titanium",
+    "finish": "None (bare titanium)",
+    "use": "1/4-20 Hex Head Bolt 1\" Titanium for see catalog",
+    "compatible_with": [],
+    "quantity_note": ""
+  },
+  {
+    "item_number": "999012",
+    "name": "1/4-20 Hex Head Bolt 1-1/4\" Aluminum",
+    "type": "Hex Head Bolt",
+    "size": "1/4-20 x 1-1/4\"",
+    "material": "6061-T6 Aluminum",
+    "finish": "None (bare titanium)",
+    "use": "1/4-20 Hex Head Bolt 1-1/4\" Aluminum for see catalog",
+    "compatible_with": [],
+    "quantity_note": ""
+  },
+  {
+    "item_number": "999012CS",
+    "name": "1/4-20 Hex Head Bolt 1-1/4\" Aluminum Case 5000",
+    "type": "Hex Head Bolt",
+    "size": "1/4-20 x 1-1/4\"",
+    "material": "6061-T6 Aluminum",
+    "finish": "None (bare titanium)",
+    "use": "1/4-20 Hex Head Bolt 1-1/4\" Aluminum Case 5000 for see catalog",
+    "compatible_with": [],
+    "quantity_note": "Case of 5000"
+  },
+  {
+    "item_number": "999075",
+    "name": "1/4-20 Hex Head Bolt 1-1/4\" Titanium",
+    "type": "Hex Head Bolt",
+    "size": "1/4-20 x 1-1/4\"",
+    "material": "C.P. Grade 2 Titanium",
+    "finish": "None (bare titanium)",
+    "use": "1/4-20 Hex Head Bolt 1-1/4\" Titanium for see catalog",
+    "compatible_with": [],
+    "quantity_note": ""
+  },
+  {
+    "item_number": "999015",
+    "name": "1/4-20 Hex Head Bolt 1-1/2\" Aluminum",
+    "type": "Hex Head Bolt",
+    "size": "1/4-20 x 1-1/2\"",
+    "material": "6061-T6 Aluminum",
+    "finish": "None (bare titanium)",
+    "use": "1/4-20 Hex Head Bolt 1-1/2\" Aluminum for see catalog",
+    "compatible_with": [],
+    "quantity_note": ""
+  },
+  {
+    "item_number": "999015CS",
+    "name": "1/4-20 Hex Head Bolt 1-1/2\" Aluminum Case 5000",
+    "type": "Hex Head Bolt",
+    "size": "1/4-20 x 1-1/2\"",
+    "material": "6061-T6 Aluminum",
+    "finish": "None (bare titanium)",
+    "use": "1/4-20 Hex Head Bolt 1-1/2\" Aluminum Case 5000 for see catalog",
+    "compatible_with": [],
+    "quantity_note": "Case of 5000"
+  },
+  {
+    "item_number": "999080",
+    "name": "1/4-20 Hex Head Bolt 1-1/2\" Titanium",
+    "type": "Hex Head Bolt",
+    "size": "1/4-20 x 1-1/2\"",
+    "material": "C.P. Grade 2 Titanium",
+    "finish": "None (bare titanium)",
+    "use": "1/4-20 Hex Head Bolt 1-1/2\" Titanium for see catalog",
+    "compatible_with": [],
+    "quantity_note": ""
   },
   {
     "item_number": "999020",
-    "name": "HD Spine Bolt",
-    "type": "Hex Bolt",
-    "size": "1/4-20 × 1.0\"",
-    "material": "",
+    "name": "1/4-20 Hex Head Bolt 2\" Aluminum",
+    "type": "Hex Head Bolt",
+    "size": "1/4-20 x 2\"",
+    "material": "6061-T6 Aluminum",
     "finish": "None (bare titanium)",
-    "use": "HD Spine Bolt for HD Discs (900100–900123)",
-    "compatible_with": [
-      "HD Discs (900100–900123)"
-    ],
-    "quantity_note": "1 per HD disc"
+    "use": "1/4-20 Hex Head Bolt 2\" Aluminum for see catalog",
+    "compatible_with": [],
+    "quantity_note": ""
   },
   {
-    "item_number": "999021",
-    "name": "HD Spine Nut",
-    "type": "Hex Nut",
-    "size": "1/4-20",
-    "material": "",
+    "item_number": "999020CS",
+    "name": "1/4-20 Hex Head Bolt 2\" Aluminum Case 5000",
+    "type": "Hex Head Bolt",
+    "size": "1/4-20 x 2\"",
+    "material": "6061-T6 Aluminum",
     "finish": "None (bare titanium)",
-    "use": "HD Spine Nut for 999020",
-    "compatible_with": [
-      "999020"
-    ],
-    "quantity_note": "1 per HD disc"
+    "use": "1/4-20 Hex Head Bolt 2\" Aluminum Case 5000 for see catalog",
+    "compatible_with": [],
+    "quantity_note": "Case of 5000"
+  },
+  {
+    "item_number": "999085",
+    "name": "1/4-20 Hex Head Bolt 2\" Titanium",
+    "type": "Hex Head Bolt",
+    "size": "1/4-20 x 2\"",
+    "material": "C.P. Grade 2 Titanium",
+    "finish": "None (bare titanium)",
+    "use": "1/4-20 Hex Head Bolt 2\" Titanium for see catalog",
+    "compatible_with": [],
+    "quantity_note": ""
   },
   {
     "item_number": "999030",
-    "name": "Frame Bolt",
-    "type": "Hex Bolt",
-    "size": "5/16-18 × 1.0\"",
-    "material": "",
+    "name": "1/4-20 Hex Head Nut Aluminum",
+    "type": "Hex Head Nut",
+    "size": "1/4-20",
+    "material": "6061-T6 Aluminum",
     "finish": "None (bare titanium)",
-    "use": "Frame Bolt for All rack frames and spines",
-    "compatible_with": [
-      "All rack frames and spines"
-    ],
-    "quantity_note": "2 per spine"
+    "use": "1/4-20 Hex Head Nut Aluminum for see catalog",
+    "compatible_with": [],
+    "quantity_note": ""
   },
   {
-    "item_number": "999031",
-    "name": "Frame Nut",
-    "type": "Hex Nut",
-    "size": "5/16-18",
-    "material": "",
+    "item_number": "999030CS",
+    "name": "1/4-20 Hex Head Nut Aluminum Case 5000",
+    "type": "Hex Head Nut",
+    "size": "1/4-20",
+    "material": "6061-T6 Aluminum",
     "finish": "None (bare titanium)",
-    "use": "Frame Nut for 999030",
-    "compatible_with": [
-      "999030"
-    ],
-    "quantity_note": "2 per spine"
+    "use": "1/4-20 Hex Head Nut Aluminum Case 5000 for see catalog",
+    "compatible_with": [],
+    "quantity_note": "Case of 5000"
   },
   {
-    "item_number": "999040",
-    "name": "Clip Bolt",
-    "type": "Hex Bolt",
-    "size": "10-32 × 0.5\"",
-    "material": "",
+    "item_number": "999090",
+    "name": "1/4-20 Hex Head Nut Titanium",
+    "type": "Hex Head Nut",
+    "size": "1/4-20",
+    "material": "C.P. Titanium",
     "finish": "None (bare titanium)",
-    "use": "Clip Bolt for 191-CA1 Clip Adapter",
-    "compatible_with": [
-      "191-CA1 Clip Adapter"
-    ],
-    "quantity_note": "1 per clip adapter"
+    "use": "1/4-20 Hex Head Nut Titanium for see catalog",
+    "compatible_with": [],
+    "quantity_note": ""
+  },
+  {
+    "item_number": "999030TP",
+    "name": "1/4-20 Tapered Hex Head Nut Aluminum",
+    "type": "Tapered Hex Head Nut",
+    "size": "1/4-20",
+    "material": "6061-T6 Aluminum",
+    "finish": "None (bare titanium)",
+    "use": "1/4-20 Tapered Hex Head Nut Aluminum for see catalog",
+    "compatible_with": [],
+    "quantity_note": ""
+  },
+  {
+    "item_number": "999055",
+    "name": "Flat Washer 5/8\" Aluminum",
+    "type": "Flat Washer",
+    "size": "1/4-20 hole, 5/8\" OD",
+    "material": "6061-T6 Aluminum",
+    "finish": "None (bare titanium)",
+    "use": "Flat Washer 5/8\" Aluminum for see catalog",
+    "compatible_with": [],
+    "quantity_note": ""
+  },
+  {
+    "item_number": "999055CS",
+    "name": "Flat Washer 5/8\" Aluminum Case 10000",
+    "type": "Flat Washer",
+    "size": "1/4-20 hole, 5/8\" OD",
+    "material": "6061-T6 Aluminum",
+    "finish": "None (bare titanium)",
+    "use": "Flat Washer 5/8\" Aluminum Case 10000 for see catalog",
+    "compatible_with": [],
+    "quantity_note": "Case of 10000"
+  },
+  {
+    "item_number": "999095",
+    "name": "Flat Washer 5/8\" Titanium",
+    "type": "Flat Washer",
+    "size": "1/4-20 hole, 5/8\" OD",
+    "material": "C.P. Titanium",
+    "finish": "None (bare titanium)",
+    "use": "Flat Washer 5/8\" Titanium for see catalog",
+    "compatible_with": [],
+    "quantity_note": ""
+  },
+  {
+    "item_number": "999057",
+    "name": "Flat Washer 1\" Aluminum",
+    "type": "Flat Washer",
+    "size": "1/4-20 hole, 1\" OD",
+    "material": "6061-T6 Aluminum",
+    "finish": "None (bare titanium)",
+    "use": "Flat Washer 1\" Aluminum for see catalog",
+    "compatible_with": [],
+    "quantity_note": ""
+  },
+  {
+    "item_number": "999057CS",
+    "name": "Flat Washer 1\" Aluminum Case 10000",
+    "type": "Flat Washer",
+    "size": "1/4-20 hole, 1\" OD",
+    "material": "6061-T6 Aluminum",
+    "finish": "None (bare titanium)",
+    "use": "Flat Washer 1\" Aluminum Case 10000 for see catalog",
+    "compatible_with": [],
+    "quantity_note": "Case of 10000"
+  },
+  {
+    "item_number": "999257",
+    "name": "Flat Washer 1\" Titanium",
+    "type": "Flat Washer",
+    "size": "1/4-20 hole, 1\" OD",
+    "material": "C.P. Titanium",
+    "finish": "None (bare titanium)",
+    "use": "Flat Washer 1\" Titanium for see catalog",
+    "compatible_with": [],
+    "quantity_note": ""
+  },
+  {
+    "item_number": "999055CW",
+    "name": "Conical Washer 5/8\" Aluminum",
+    "type": "Conical Washer",
+    "size": "1/4-20 hole, 5/8\" OD",
+    "material": "6061-T6 Aluminum",
+    "finish": "None (bare titanium)",
+    "use": "Conical Washer 5/8\" Aluminum for see catalog",
+    "compatible_with": [],
+    "quantity_note": ""
+  },
+  {
+    "item_number": "999095CW",
+    "name": "Conical Washer 5/8\" Titanium",
+    "type": "Conical Washer",
+    "size": "1/4-20 hole, 5/8\" OD",
+    "material": "C.P. Titanium",
+    "finish": "None (bare titanium)",
+    "use": "Conical Washer 5/8\" Titanium for see catalog",
+    "compatible_with": [],
+    "quantity_note": ""
+  },
+  {
+    "item_number": "999057CW",
+    "name": "Conical Washer 1\" Aluminum",
+    "type": "Conical Washer",
+    "size": "1/4-20 hole, 1\" OD",
+    "material": "6061-T6 Aluminum",
+    "finish": "None (bare titanium)",
+    "use": "Conical Washer 1\" Aluminum for see catalog",
+    "compatible_with": [],
+    "quantity_note": ""
+  },
+  {
+    "item_number": "999257CW",
+    "name": "Conical Washer 1\" Titanium",
+    "type": "Conical Washer",
+    "size": "1/4-20 hole, 1\" OD",
+    "material": "C.P. Titanium",
+    "finish": "None (bare titanium)",
+    "use": "Conical Washer 1\" Titanium for see catalog",
+    "compatible_with": [],
+    "quantity_note": ""
   },
   {
     "item_number": "999050",
-    "name": "Clamp Bolt",
-    "type": "Hex Bolt",
-    "size": "1/4-20 × 0.625\"",
-    "material": "",
+    "name": "Solid Rivet 1/4\" x 3/4\" 1100F Aluminum",
+    "type": "Solid Rivet",
+    "size": "1/4\" x 3/4\"",
+    "material": "1100F Aluminum",
     "finish": "None (bare titanium)",
-    "use": "Clamp Bolt for 191-RC1 and 191-RC2",
-    "compatible_with": [
-      "191-RC1 and 191-RC2"
-    ],
-    "quantity_note": "2 per clamp"
+    "use": "Solid Rivet 1/4\" x 3/4\" 1100F Aluminum for see catalog",
+    "compatible_with": [],
+    "quantity_note": ""
   },
   {
-    "item_number": "999051",
-    "name": "Clamp Nut",
-    "type": "Hex Nut",
-    "size": "1/4-20",
-    "material": "",
+    "item_number": "999050CS",
+    "name": "Solid Rivet 1/4\" x 3/4\" Aluminum Case 5000",
+    "type": "Solid Rivet",
+    "size": "1/4\" x 3/4\"",
+    "material": "1100F Aluminum",
     "finish": "None (bare titanium)",
-    "use": "Clamp Nut for 999050",
-    "compatible_with": [
-      "999050"
-    ],
-    "quantity_note": "2 per clamp"
+    "use": "Solid Rivet 1/4\" x 3/4\" Aluminum Case 5000 for see catalog",
+    "compatible_with": [],
+    "quantity_note": "Case of 5000 (~29 lbs)"
   },
   {
-    "item_number": "999052",
-    "name": "Connector Bolt",
-    "type": "Hex Bolt",
-    "size": "5/16-18 × 1.25\"",
-    "material": "",
+    "item_number": "999040",
+    "name": "Solid Rivet 3/16\" x 3/4\" 1100F Aluminum",
+    "type": "Solid Rivet",
+    "size": "3/16\" x 3/4\"",
+    "material": "1100F Aluminum",
     "finish": "None (bare titanium)",
-    "use": "Connector Bolt for 191-RC3",
-    "compatible_with": [
-      "191-RC3"
-    ],
-    "quantity_note": "2 per connector"
+    "use": "Solid Rivet 3/16\" x 3/4\" 1100F Aluminum for see catalog",
+    "compatible_with": [],
+    "quantity_note": ""
   },
   {
-    "item_number": "999053",
-    "name": "Connector Nut",
-    "type": "Hex Nut",
-    "size": "5/16-18",
-    "material": "",
+    "item_number": "999040CS",
+    "name": "Solid Rivet 3/16\" x 3/4\" Aluminum Case 5000",
+    "type": "Solid Rivet",
+    "size": "3/16\" x 3/4\"",
+    "material": "1100F Aluminum",
     "finish": "None (bare titanium)",
-    "use": "Connector Nut for 999052",
-    "compatible_with": [
-      "999052"
-    ],
-    "quantity_note": "2 per connector"
+    "use": "Solid Rivet 3/16\" x 3/4\" Aluminum Case 5000 for see catalog",
+    "compatible_with": [],
+    "quantity_note": "Case of 5000 (~13 lbs)"
+  },
+  {
+    "item_number": "999045",
+    "name": "Solid Rivet 3/16\" x 1\" 1100F Aluminum",
+    "type": "Solid Rivet",
+    "size": "3/16\" x 1\"",
+    "material": "1100F Aluminum",
+    "finish": "None (bare titanium)",
+    "use": "Solid Rivet 3/16\" x 1\" 1100F Aluminum for see catalog",
+    "compatible_with": [],
+    "quantity_note": ""
+  },
+  {
+    "item_number": "999045CS",
+    "name": "Solid Rivet 3/16\" x 1\" Aluminum Case 5000",
+    "type": "Solid Rivet",
+    "size": "3/16\" x 1\"",
+    "material": "1100F Aluminum",
+    "finish": "None (bare titanium)",
+    "use": "Solid Rivet 3/16\" x 1\" Aluminum Case 5000 for see catalog",
+    "compatible_with": [],
+    "quantity_note": "Case of 5000 (~17 lbs)"
   }
 ]
